@@ -1,0 +1,2983 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+</head>
+<body>
+<pre id="certificate">&lt;&lt;&lt;EXERCISE CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:56:49 2023
+Successes: 32
+Points: 18
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature">1705bf257bead948bc04dec34891eb1eb4223409ba9970a32faeeaeaea36af0cc4122838ad96359b36221660bbf547230ffba864556d9761810fcf8d50ef761305e434f05eb7325617eb416b1189a6f0af4178a0c37755e3cb47b3ce3501442c17d081e06537b866ced68a848b500e788e595271f5fcb0e9612329a5e5ad367d7f486b1597750e0acfc1e55304fb3422fd94d570bcfd60408b1dd3c9d5ce5a014fd933eb3d277f502d5cd5dd7ee3a0ce01e69e2774711f16ca511d0e8ce8efb8864d40ccdb10e22dc6c136da3d2c4812d223d0ccf6d40cda0d51c45a4743e5cc9fcafc88b37b19a9c1e8beba9907eb07496cb829ce815ca96e271db7ff81b829</pre><pre id="certificate0">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 16:20:35 2023
+Action: task1x
+Points: 0
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=false
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+0, 1, 2, 3
+
+task2asatin=false
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+0 , 1 , 2 , 3
+
+task2bsatin=false
+task2bvalidin=false
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=false
+task3bsatin=false
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+¬ ∀x:ℕ[2]. p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y])
+
+task5bin=// Task 5b: push the negation inside
+¬ ((∃x:ℕ[2]. p[x]) ∧ (∀x:ℕ[2]. ∃y:ℕ[2]. p[y] ∧ (q[x][y] ∨ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpnqv36csa
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing ass1x().
+Execution completed (49 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature0">317dcf4502e06e6bb15bac50a2c80b5956aa3474c90840d9395d057ad8d466ba4c506b623e343c5cec777161a375deb93cf8ca7ba6d6249dea6368a63093add132657777f79cce20c40e253311e09db249e860ea2a2b727dd9db030be133a3ebb85fdfb68e23f6fd5486da371d20e824e385592c3b13efbcf462657b272faa4b018dedd9d02a5d6752b6ee97adc0f8a82d8cd0f7101804a95eec1887b2b1ff5219cde903247928452a149d0899f11e6ce716ee251435b404f05414294ad6f624ebaba699f0dcafd76d1373a13e872ee942d11db0774bae2f924e3b23d13a7a01f98474254263588a4c8b7d8dea435c6e8c9cba646edca3a713928f8980013441</pre><pre id="certificate1">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 16:24:14 2023
+Action: task1xsat
+Points: 0
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=false
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+0, 1, 2, 3
+
+task2asatin=false
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+0 , 1 , 2 , 3
+
+task2bsatin=false
+task2bvalidin=false
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=false
+task3bsatin=false
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+¬ ∀x:ℕ[2]. p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y])
+
+task5bin=// Task 5b: push the negation inside
+¬ ((∃x:ℕ[2]. p[x]) ∧ (∀x:ℕ[2]. ∃y:ℕ[2]. p[y] ∧ (q[x][y] ∨ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpdtxcd2mo
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing sat1x().
+Execution completed (36 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature1">87579565cc686a413d16aa28f8f20fd610bb50ec6643e320df2e42b0de8788881f2de92ddcc95be52e6891a0673144282f770f4c2afad4b28793da175f0ea749a798e26f1b86a62a0b5c3c56b7b059fa317b3672c608ccd9d6aab6e7c11aeda08551fe61a3cb19d94dff9f17a09c09eaaf321225930efd463c832c5875d83e2820bb1aa271c2da7cfd136a43e3a936bbfcd8a50736e99c9ae76324b5d33e151cea38cb0d396482a7aeb21dec27a0a24e68c6e4a0b333666e752764391713f6b1bd87771b6f1fae9a953c6e75ad5d5b5916a97ee1dfaa047c983d085f812587318b57cad8722ee8695b6cf4ef069ed6887099b79f3f2b1c6055b6d1e46f75a5ee</pre><pre id="certificate2">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 16:24:38 2023
+Action: task1xvalid
+Points: 0
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=false
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+0, 1, 2, 3
+
+task2asatin=false
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+0 , 1 , 2 , 3
+
+task2bsatin=false
+task2bvalidin=false
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=false
+task3bsatin=false
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+¬ ∀x:ℕ[2]. p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y])
+
+task5bin=// Task 5b: push the negation inside
+¬ ((∃x:ℕ[2]. p[x]) ∧ (∀x:ℕ[2]. ∃y:ℕ[2]. p[y] ∧ (q[x][y] ∨ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpqgifhjqx
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing valid1x().
+Execution completed (18 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature2">3c0576d2c590098d25520a60813b3297c76c3087cd39a718c6210a55a18923e984b50835e3eacf759f11e91fd8479f9f7ba47983daeff170657440f589a1dbd365b4c4e3f5be236c2554565d9aaee6ad93f990f3f69cab5865f7213f64af683a1fba6f2ae2bbafc7229af78c6a9c2f589c8d279036e2a03d04d71827b36c9b0216d93c635572517e94568379c86a2aa4b1c9f0f0a505725216459871d64c0941dd44e1fa762a5de6f4673a02590e2ea28348a5efe938811fa49fb17150ce4cd4e8370e4174cbcae63118f6f0237d277be47980a93df4865a26632457b5681e03480d4e7122562e290bc8aee27ada77c06d5d4fcf3a7c0be7622b868928859258</pre><pre id="certificate3">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 16:24:45 2023
+Action: task1xhelp
+Points: 0
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=false
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+0, 1, 2, 3
+
+task2asatin=false
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+0 , 1 , 2 , 3
+
+task2bsatin=false
+task2bvalidin=false
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=false
+task3bsatin=false
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+¬ ∀x:ℕ[2]. p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y])
+
+task5bin=// Task 5b: push the negation inside
+¬ ((∃x:ℕ[2]. p[x]) ∧ (∀x:ℕ[2]. ∃y:ℕ[2]. p[y] ∧ (q[x][y] ∨ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmp2frtq18w
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing num1x().
+Run of deterministic function num1x():
+Result (24 ms): 2
+Execution completed (24 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature3">12a2ef45a711a708d1332634fb14c9a5771e399f9e076cda343096b3cfd8be557fd3fd1834cf8c873d2e2f85a45317022be9eb857feb603aeec29629a2c6744d77e3b578cb09c4d85cbbee980486f7891398a7664bc6d0cf458d202765556900efc23612714ec964f0cf4fd04f78ebd3b96f28eb1fa74ec5e1905c5d2f6d75eeba85314218bc1072f9e3204659d42f79ec51eed0e340719540b8d235c40b2234f7e03006f4fa940ab5bf46e4a17e708b9ab37c596987f1ef9e2add7c99ba96441e0b4fdc04cb6cdb6ab47b2c6191f7583b32e026ba2c20f55f7f40311ab73132d104a683d025e4c4333611c7c227c29e04ae30db9b2602488169042d1a843ccb</pre><pre id="certificate4">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:03:28 2023
+Action: task1asat
+Points: 1
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , 
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+0, 1, 2, 3
+
+task2asatin=false
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+0 , 1 , 2 , 3
+
+task2bsatin=false
+task2bvalidin=false
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=false
+task3bsatin=false
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+¬ ∀x:ℕ[2]. p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y])
+
+task5bin=// Task 5b: push the negation inside
+¬ ((∃x:ℕ[2]. p[x]) ∧ (∀x:ℕ[2]. ∃y:ℕ[2]. p[y] ∧ (q[x][y] ∨ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpqmvxu6_y
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing sat1a().
+Execution completed (19 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature4">1f86debe899978e8fc5cf62afbe4f58f42aba9083ea902c314449b2ec794e3ea33b06696d75ec2dd579f953309323bab192740f83dd3fd15ce1bd00cad674e6af5d97fd009339be51551beb184e2baa2adee4ed3ef41ef7cc8a169e9122b5f43f5ef279455514636f4dfd904723354478b7a0ad6eb3cb5b8810692d3ce4c563a2de712ecc6c26aab62c18579def0d53f76f7d85dd3bdc978c6c6962933dc8b1763e0f1fda8306f313ac4ac600d46025967ee808d242efe697ca7c3c870e230c7e868530efbd1c9809711f66c5c2bbcda3e1feff76e412c8cdf202b33e9b0a37cceeb672ff22c4257e0c84eccf278091bb5ff57cf32757ba81621022357b21b63</pre><pre id="certificate5">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:03:46 2023
+Action: task1avalid
+Points: 1
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , 
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+0, 1, 2, 3
+
+task2asatin=false
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+0 , 1 , 2 , 3
+
+task2bsatin=false
+task2bvalidin=false
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=false
+task3bsatin=false
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+¬ ∀x:ℕ[2]. p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y])
+
+task5bin=// Task 5b: push the negation inside
+¬ ((∃x:ℕ[2]. p[x]) ∧ (∀x:ℕ[2]. ∃y:ℕ[2]. p[y] ∧ (q[x][y] ∨ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpncthbnmp
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing valid1a().
+Execution completed (33 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature5">ab589c422e88dffd0589d2b0d489206f94d73f0c8e88f8e896c5fb45abb3261282e3fd546edbadf07afce845a8495da2422c4e6b37031d9dc5a3cb08e0b1d15adaac1a099989b97f2afc1519c4bda6bdd92a12695aac9cea6dee416d0b2b1bba22a14536c842afb6dadecbb73a43a689c98005a2f43e148dbde1ed6bed5ff6a9ddf728a34e4cf7cf95e6a22a769c6cd2a6ff8e00096a5d6187f226e8da0a7e58b92a90c05bc4aae398cbb27302680eb285699a9d467b23447fe0755cc902ee9e651c5d87ff64ff97e3685bb087fc1f618a54d5f65c980689445c57d1565e265c21103cf2f2999ef671a7eee484f6618672ca6e8577ce2d774c99c806ed81f71a</pre><pre id="certificate6">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:04:01 2023
+Action: task1ahelp
+Points: 0
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , 
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+0, 1, 2, 3
+
+task2asatin=false
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+0 , 1 , 2 , 3
+
+task2bsatin=false
+task2bvalidin=false
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=false
+task3bsatin=false
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+¬ ∀x:ℕ[2]. p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y])
+
+task5bin=// Task 5b: push the negation inside
+¬ ((∃x:ℕ[2]. p[x]) ∧ (∀x:ℕ[2]. ∃y:ℕ[2]. p[y] ∧ (q[x][y] ∨ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpowq7ye1f
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing num1a().
+Run of deterministic function num1a():
+Result (29 ms): 13
+Execution completed (29 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature6">a0ffb2a6385703cd73332c6612c327ce54306bdf59909914cd0df99084ae3fadc6dc6a92da0d07e2325db6dc4794a5285d47e44cb14fce85ff464523cf2efb254290a46fbe41e54a5ab94f49311e7f896869d9bd980fef01f705a5678cc037f9692cac8a6dc046084eb06f90610f3fb8a9db231eac7f1083367de3f12273f958ce55cfc073b0e337084f5fc1883f817339f2539fe492298bc466c2a87c0ab25a5db8e4131130d1a0e07d2e5e8e665c2d6b57beff193a674c0203d9defe23a4569924ece11b21533b7f82fbdb24424e582fbfc46bc321964f01915966c90fdaeee42006d9010b8a0ae12ffb28afe5aa9931e9f8511afd84efa95211fed519f295</pre><pre id="certificate7">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:32:27 2023
+Action: task1a
+Points: 1
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+0, 1, 2, 3
+
+task2asatin=false
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+0 , 1 , 2 , 3
+
+task2bsatin=false
+task2bvalidin=false
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=false
+task3bsatin=false
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+¬ ∀x:ℕ[2]. p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y])
+
+task5bin=// Task 5b: push the negation inside
+¬ ((∃x:ℕ[2]. p[x]) ∧ (∀x:ℕ[2]. ∃y:ℕ[2]. p[y] ∧ (q[x][y] ∨ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpcjilf7vl
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing ass1a().
+Execution completed (59 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature7">7883c5aaf03e58fa52b0ce77f5695148af84147dc9259c4b3bf547f464f6e3f7fca4b933124878ca450a611969d021d72e69069e00eb6f010985cc3066119e08b7931993612a6bb980baca4aef8200ed83228f5e06f9e928fb25184318b3c93cb800a00d00d3629bf80bc9089ed0b97ce861bdd0bc253f5b6c9a56c7bc1bbb1e84c938e5473acb9e6d7093a29b1ab766dbec8f165a71138cc3c2fc1fbc33116797d2938da0c6707a9ea225b83cf31e41fe6005508a6a53d5ff645d2fbc3a09a55e5464b64b4b66f1f937154e91b849da88fa71a4e493ed9765f97a89770b8e2ef4d8ed1a18b54d6fc78eba858c9415591bcf0a9926c0cfa4f099e3da92fc969a</pre><pre id="certificate8">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:34:16 2023
+Action: task2x
+Points: 0
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+0, 1, 2, 3
+
+task2asatin=false
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+0 , 1 , 2 , 3
+
+task2bsatin=false
+task2bvalidin=false
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=false
+task3bsatin=false
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+¬ ∀x:ℕ[2]. p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y])
+
+task5bin=// Task 5b: push the negation inside
+¬ ((∃x:ℕ[2]. p[x]) ∧ (∀x:ℕ[2]. ∃y:ℕ[2]. p[y] ∧ (q[x][y] ∨ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmp9fjrr718
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing ass2x().
+Execution completed (136 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature8">1157162873bddcc0b5220b5727316f39ed81fe9cd656d3b9490c53578ebd118ea6e61a3814ac37580ccc20e3bca63e810abfe619886b0e2349a909f30420327dd97f272b9a38140f660a0b0dbb89373f48308652b2d042188e0682cf8206746864cca74c406ba7e2f32e50b42e433c9769e28c61c300fd1c0c734399bf9cdd4d64f30af2f423afddd4a21026fc228c69d4c9593497f525a8839a723a6aa24ac16cf8e6d352ecb4b50b858c5ad9209fcfe042b0cb27368c4726a27b86a9d8970777bd1b23185603045c67ff0e3bcab628be9ea6357dbb003328be5a62c3da42cc01b57aa2ebd930ac197207c1de35eba3023098b779387e1d1cde46bbdd867af9</pre><pre id="certificate9">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:34:29 2023
+Action: task2xsat
+Points: 0
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+0, 1, 2, 3
+
+task2asatin=false
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+0 , 1 , 2 , 3
+
+task2bsatin=false
+task2bvalidin=false
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=false
+task3bsatin=false
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+¬ ∀x:ℕ[2]. p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y])
+
+task5bin=// Task 5b: push the negation inside
+¬ ((∃x:ℕ[2]. p[x]) ∧ (∀x:ℕ[2]. ∃y:ℕ[2]. p[y] ∧ (q[x][y] ∨ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmp65f4_esn
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing sat2x().
+Execution completed (84 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature9">9454a1020b11add64ed0fde2c866b4b8331f7a074c7b7e22d0c35556fd2d748d2f8fa3d8b157689eea5a88cc126d83d37025921daea4abc92389d2b016ca12f6119a1da51f1d25d841a3b34368e5eb87b84fa1409d3f4c7d6691369ee22cf380b10b1cc17809a26f67f555b6141a78218c83fd08b5c6084a79b69f271921bb30205dfef52ac11631178a49c93e73fc750bbb3f7546955c40d3712d12299bb1f82c17908b05be9b7ff3eaa953b13bb1ea11d573dd1640f4e403eb7385ce28922c1f614a7079deea231e706c35381347f80ab2390a81de2aab137025cf973034f1f5293fc67ace95b4c3286ae7516d4c1e99b29067675b01535a8c6030a43f9128</pre><pre id="certificate10">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:34:38 2023
+Action: task2xvalid
+Points: 0
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+0, 1, 2, 3
+
+task2asatin=false
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+0 , 1 , 2 , 3
+
+task2bsatin=false
+task2bvalidin=false
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=false
+task3bsatin=false
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+¬ ∀x:ℕ[2]. p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y])
+
+task5bin=// Task 5b: push the negation inside
+¬ ((∃x:ℕ[2]. p[x]) ∧ (∀x:ℕ[2]. ∃y:ℕ[2]. p[y] ∧ (q[x][y] ∨ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpaipuwapj
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing valid2x().
+Execution completed (20 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature10">6d61e9c0afe2fe2ee967a1647adb1ca16a3bab3c0f6375fac749ccef91cf1bef185ca8ed35e560b52219aa7f31e7d16b6e5c923934c248df1b8e8287cf59d985c67ce1284d979ada3d85a6d5b89026d678e54e955ccfdfa940c463505067b51e46827908c233f6ad5cf5c3271bbce3a6695be865ae29bf3e6fa3fe78c784241f456acc513e9c38e1ee655614c2c6134be9cf348e0bb0413ed24432f0940ccd60fd0cde7c07ef64b4a6049e7fe4d1d67a727c5899e65fc6ccb47d76675437bec6e970ffa214862f21d62186ea20dd9c40bf8f894dc258fb0c01aebc625a55937d85e0a8bcd79829042000e393eb638407bbd6eaa9760f180b09082bfd8a697776</pre><pre id="certificate11">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:35:05 2023
+Action: task2xhelp
+Points: 0
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+0, 1, 2, 3
+
+task2asatin=false
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+0 , 1 , 2 , 3
+
+task2bsatin=false
+task2bvalidin=false
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=false
+task3bsatin=false
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+¬ ∀x:ℕ[2]. p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y])
+
+task5bin=// Task 5b: push the negation inside
+¬ ((∃x:ℕ[2]. p[x]) ∧ (∀x:ℕ[2]. ∃y:ℕ[2]. p[y] ∧ (q[x][y] ∨ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpt7ma89_b
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing num2x().
+Run of deterministic function num2x():
+Result (60 ms): 3
+Execution completed (60 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature11">54cbe074dd2ce43ba305fbc2bca21d6c967b2b577c686307519652a8afb470900a3437b8ee82e8b67970ab79b939d457e604d3ad8bbbe5cbef78cb178540bdff60015ddff2c4c63a94dedf0b777b489abf769619b54c143da2d9e90cd2fd2b831d0fb000cd1aa838dec3eb45536d31a50f10a6d24bcd1913c97dc28cea3ba596a77c69ef5268264e79264dff31a1c2b6b174c467d13d84971991ab2c0d412ae098307b918b2d20595cc2ada84fc49cb08f4f6dd693f900364d48c9d38ddae0d13cd589e92763bb20b08672d7bd978c95ba0114809c529b777df521217e6b8c71a1f0260cc1af5faeb51ebb15e857b66f19fb10387d842558e9750af65c7c71cd</pre><pre id="certificate12">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:35:32 2023
+Action: task2a
+Points: 1
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+1, 2, 3
+
+task2asatin=false
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+0 , 1 , 2 , 3
+
+task2bsatin=false
+task2bvalidin=false
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=false
+task3bsatin=false
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+¬ ∀x:ℕ[2]. p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y])
+
+task5bin=// Task 5b: push the negation inside
+¬ ((∃x:ℕ[2]. p[x]) ∧ (∀x:ℕ[2]. ∃y:ℕ[2]. p[y] ∧ (q[x][y] ∨ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpqwj3_f0a
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing ass2a().
+Execution completed (60 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature12">424dda56d210f2aa4a5ca3b6a0b8b6b90d2b89dd0125039ce7acdb73908b5c4311d549936f12f77595e65143274d1669b043f9c8f458a1dd44832b23aed27a405c3023f32164216f168bbe34edbad5360cfb52f3ee7125d406d8b6dab91d79e8aadacad2c67306018a13fb62677d43d9f7a0857b2f0f7183ee2174f5b688b1716ea6ae24212dbe7ea84b4158103fec89a5703d236cb53762a1f79f59ece9ee7e1df03d5103400d9d47d996993a65ee71c323fc783b2df20fffdcec1dc03316c78dd1b803af12ae378b1e5417d82539d8ba40c56bc7a0c980097f4272e089d639780030cd6a3dd7cb8ce624fb0b97d0c947412c1ecb9fdf1484fc56e1d4b0faf6</pre><pre id="certificate13">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:37:06 2023
+Action: task2asat
+Points: 1
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+1, 2, 3
+
+task2asatin=true
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+0 , 1 , 2 , 3
+
+task2bsatin=false
+task2bvalidin=false
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=false
+task3bsatin=false
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+¬ ∀x:ℕ[2]. p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y])
+
+task5bin=// Task 5b: push the negation inside
+¬ ((∃x:ℕ[2]. p[x]) ∧ (∀x:ℕ[2]. ∃y:ℕ[2]. p[y] ∧ (q[x][y] ∨ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpdrvjxmnf
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing sat2a().
+Execution completed (82 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature13">535966866f6a81f82194e2875e5b525a2d8d786746fafdd5f4be3bceed0b3760bd5dfb4104380533998dd6d35adf5dff55ac3bb8ab76e91b34862ebd464ac8109fb33ba5d6335e58d18f10e0d0bfb18408e964b8da143ac775faf559e6105ad32fa3789680ae58617e4322f56f432fa0d701821e1d26d6a2adbd26d15c2d3aa6badd8844416295ccf02a22174d48fca32c6e36d698704155c26af6d5f2ab36664967717492859f8ac4d3a42cb68a67cb78b2b441d2f50e0b948fae734a16afded055409c89656a8cfdac58b95b76cc41cd90c8f66265ce0c492cc67770e83732093750faaafde4ccc2550b9257f44ee2350d5cfe1a16b2feb88d355cecaf177e</pre><pre id="certificate14">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:37:21 2023
+Action: task2avalid
+Points: 1
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+1, 2, 3
+
+task2asatin=true
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+0 , 1 , 2 , 3
+
+task2bsatin=false
+task2bvalidin=false
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=false
+task3bsatin=false
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+¬ ∀x:ℕ[2]. p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y])
+
+task5bin=// Task 5b: push the negation inside
+¬ ((∃x:ℕ[2]. p[x]) ∧ (∀x:ℕ[2]. ∃y:ℕ[2]. p[y] ∧ (q[x][y] ∨ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmp28og7r4q
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing valid2a().
+Execution completed (83 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature14">3b8f4fcf93573477a80d4a18e1c9a123817c38f06e62e4569da6888e2b5f0663613838094a40e9809030494498fd4af3b0a310ea41fdba94b79f2dbfe936f14bd188729a0067a6e246022e53123165fc0ee3dd80cd5628b34431e42d42737b54bd0a45d39b493dea71d8898de2ec10ad88c00c189da3785ecd47fe22ebdf3bc7a3d4dc222aee74601be3904fa7ec334e1476616c0c03a97dea2e04c3dcc2bb4960cc547465cd3ea54bca2a09eec88f9ea9503f8b133f7fa0cc1ce49f6304653c43b2e68eff5be0b024fe50ba8dba92b760104ced3f54d2a9cf52c8e5467609b37577846621d978bded87f90285b18c0cc163a6c97de351a4672a5402c41170f5</pre><pre id="certificate15">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:41:42 2023
+Action: task2b
+Points: 1
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+1, 2, 3
+
+task2asatin=true
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+1 , 2
+
+task2bsatin=false
+task2bvalidin=false
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=false
+task3bsatin=false
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+¬ ∀x:ℕ[2]. p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y])
+
+task5bin=// Task 5b: push the negation inside
+¬ ((∃x:ℕ[2]. p[x]) ∧ (∀x:ℕ[2]. ∃y:ℕ[2]. p[y] ∧ (q[x][y] ∨ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpsq7vrn8u
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing ass2b().
+Execution completed (53 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature15">55c9f1374155d3caece2e70a0cc5cca2c546a82dd003c750948154d57f10d04c3721ce890ab8cb15dcd567046144bf8c7a5b5d38f12fb1b1a5698f50ca9a812e9eefd3f1cb97f0fb3e61a31aeb90f7e7a5b9f393cdfa571647c4c24c40a8ba50450e0a1b1e9b01132089892c8537bbfb6c8e994fa55834a7d81436889d6bc1876d035d0f565aa90252680e64a1b521e8430c57ff8bfda07bf558b5d5698acd9d3e9edbc06ea4a8cc80a8e205ace006944f16f97c48a8b230ef3bd8e12b4e8bd3b91224264bdc756fdb33c3aca5bfa477dd2bebc5ac6c075f03e7c2ea0457970bf1843c5d0d06c153e270945f01af5df103895badfebbaa9c5ca5d2e3886d6ecb</pre><pre id="certificate16">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:41:55 2023
+Action: task2bsat
+Points: 1
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+1, 2, 3
+
+task2asatin=true
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+1 , 2
+
+task2bsatin=true
+task2bvalidin=false
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=false
+task3bsatin=false
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+¬ ∀x:ℕ[2]. p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y])
+
+task5bin=// Task 5b: push the negation inside
+¬ ((∃x:ℕ[2]. p[x]) ∧ (∀x:ℕ[2]. ∃y:ℕ[2]. p[y] ∧ (q[x][y] ∨ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmptvbdt5we
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing sat2b().
+Execution completed (39 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature16">9c6a6ff982647244bc0f6d219f642fa46837c3c4886cf514ee78c20dd113fa73898bcb12873d1bd99b60a6603744872001889fc2ac731fb9010ebb3c37f4f3c21087c0ff5c3085dbec621f457dda1f67e5696cc271dc7d1db8448ecd817613de266986e2966410132d9a6dddfed59c0afab4864cc3ce591c5fdafe8e15bcdfcc8b461e0ab2753489cac9722ca8fafc8526efd93a4895915c6b1a3572bdb2d22bbcb84d5af533231b5f1404bd72b57e034daa8885efaa3cbf39bd0529bbf0840fbc616ad78b27c85f24bc86e4f36fdfe2b7a8fe34c689d0cccae8a5c6aaf3ed9808b6917ee2c21dfe5b3c85f38312c45997bb0b48e72f416a0757c1c66b28b4d6</pre><pre id="certificate17">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:42:34 2023
+Action: task2ahelp
+Points: 0
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+1, 2, 3
+
+task2asatin=true
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+1 , 2
+
+task2bsatin=true
+task2bvalidin=false
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=false
+task3bsatin=false
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+¬ ∀x:ℕ[2]. p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y])
+
+task5bin=// Task 5b: push the negation inside
+¬ ((∃x:ℕ[2]. p[x]) ∧ (∀x:ℕ[2]. ∃y:ℕ[2]. p[y] ∧ (q[x][y] ∨ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpc06s9rv2
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing num2a().
+Run of deterministic function num2a():
+Result (13 ms): 3
+Execution completed (13 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature17">7efc5e968f3bf58ffdc096858fa52fe154f4bd8285371349b932f90c06802404516f97a0184ac43d0afe39bb8e635b1b4521a56d58ed2532b5720ec4ddfb689c6a5af60acaa4b247246979ad7af246d2238e2d865db96330dd3b1b4367036e134e67ddcb9f9cc1c401c825239abfc34c39b558fc949652338045150c0efd9bb5dd240c10e571dd62fe1ade488354853f8e25c09e4164db59282bebb43165ca6af390cb7587512c8394f65e6482e9c1f0eed35814383a64dba58f970e2cd9d819159ad5ec1c8ae472784b01ccb01ddd4c3c4df7b8c354ec5e75b934814c4134b52e9c708e5718460404ed8eb146eb1d5e1c902a8913d06044f0639d6c0b274a7b</pre><pre id="certificate18">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:42:53 2023
+Action: task2bvalid
+Points: 1
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+1, 2, 3
+
+task2asatin=true
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+1 , 2
+
+task2bsatin=true
+task2bvalidin=false
+
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=false
+task3bsatin=false
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+¬ ∀x:ℕ[2]. p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y])
+
+task5bin=// Task 5b: push the negation inside
+¬ ((∃x:ℕ[2]. p[x]) ∧ (∀x:ℕ[2]. ∃y:ℕ[2]. p[y] ∧ (q[x][y] ∨ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmp66lnt93f
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing valid2b().
+Execution completed (74 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature18">a7215411ffbe59ea4e1be20e453c241f736046de605861a222e00c0d93c8b660b7457eb6eef6e02657ff32b6c3197599e03f4f170e5608cb2bf1bfb3756b78baf24caa44ce61c51a139976600100942dc37d49b37d6bfaa7be362a62e3c2db9c099d93fa2a27a640b224e18e778e59c8640e1f71af563f8618baff2aae4bb1edf0d3f6f52b26280f08a5498ac91c32ee813a9fefd2a829e108ed0976b8f4fd34b077aac63f79ed29466b5e7f0132ad438bdb6980e5d518f92d91c8856d94d83826d3700184923ca8e1dd71097d0de5d2acaba40dd6139baff5aaaa65d2285a0f7fab22c05e81f566514da6a13ba3e8bb869c0663117656a5eb5ff877d48dcb98</pre><pre id="certificate19">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:43:02 2023
+Action: task2bhelp
+Points: 0
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+1, 2, 3
+
+task2asatin=true
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+1 , 2
+
+task2bsatin=true
+task2bvalidin=false
+
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=false
+task3bsatin=false
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+¬ ∀x:ℕ[2]. p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y])
+
+task5bin=// Task 5b: push the negation inside
+¬ ((∃x:ℕ[2]. p[x]) ∧ (∀x:ℕ[2]. ∃y:ℕ[2]. p[y] ∧ (q[x][y] ∨ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpsy58z5os
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing num2b().
+Run of deterministic function num2b():
+Result (35 ms): 2
+Execution completed (35 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature19">8c980e11016fa29dc17b24951a5e9eba3a1a17dd8d6ef3e2e63d991d3430d95054c57ebc9665bc6f8fa5b856968de0abf1c0c3a98f9e48e5bc75987128c50bbe991d50c0742ab4fd92f2c1931cfdfe134255275c74ed7e0677c4f29cb9c801d54eca7448db71dd24d0b681480f978733d9360e2d9f29db43cf04e82ee87ef87365242565f66cf067f3f4f5521ad6dfab8578d950a11dd9b0aa790a431507034da508dc8967abebc1dc7a8066e2e7f39a6954da0655625132da179cb0df80ee8011432131770042151f210352f0105cfe26a0a8785a339d9504d343957cc2f2816086d9244a8b1e94b8bc7bff6da306d13caa862ee38fa5c2e66794ec08480c07</pre><pre id="certificate20">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:44:02 2023
+Action: task3xsat
+Points: 0
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+1, 2, 3
+
+task2asatin=true
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+1 , 2
+
+task2bsatin=true
+task2bvalidin=false
+
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=false
+task3bsatin=false
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+¬ ∀x:ℕ[2]. p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y])
+
+task5bin=// Task 5b: push the negation inside
+¬ ((∃x:ℕ[2]. p[x]) ∧ (∀x:ℕ[2]. ∃y:ℕ[2]. p[y] ∧ (q[x][y] ∨ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmprggve3iz
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing sat3x().
+Execution completed (124 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature20">7fd95178a64320b2dfb51ebe6012d712053fe5864ca32dafb6281f32836b7e63ba452d45f0a9071c8c98e87015ed819666745465f59014facfc3b1300e0b70fd2f337aa4a7482b0e0e180a2ab544b41d91ea5630ec585ea2c8ba2fd344b8f52831ea71104af986541b026b54cc6b830e3a52f8be31012032df62bfe98116d5c4c23172c89b4119a4c5e668324ff8e07f6923b8ec6614282b8128c874bd48d43470c74feda51534ebb0e99e6f4c7ab9e79baf44bb2f6663507db61d54fe58503085f7acfc3bbc2f97ee88fc8c9eceeb0cc264fb006226234d73fcc5ec43f172e12bc3da988c220f3710b46c12769753a45513a66c41d67eca6e1556ecabcc9030</pre><pre id="certificate21">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:44:37 2023
+Action: task3asat
+Points: 1
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+1, 2, 3
+
+task2asatin=true
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+1 , 2
+
+task2bsatin=true
+task2bvalidin=false
+
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=true
+task3bsatin=false
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+¬ ∀x:ℕ[2]. p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y])
+
+task5bin=// Task 5b: push the negation inside
+¬ ((∃x:ℕ[2]. p[x]) ∧ (∀x:ℕ[2]. ∃y:ℕ[2]. p[y] ∧ (q[x][y] ∨ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpo80jua3q
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing sat3a().
+Execution completed (57 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature21">696291ae4ca160e63451bca2a881c43c051448f43a028302913f2c83f09f24c55707c9402f40e8fc66fa2c4d13b163a65b72b58544402ce6ce5230cf25ec896e594735cd872245d1da4e5f320ead56d473fe92a0f8af1dfe05da0e8836f7bccf4f500f32aca2910d487c8aaec7624f70e896fcd354ca36a1eff6cb7214a7b31601637eb563b91d752924594f0c6cbecbeb2970f5b1fe7289d96f59da11c075324ec6becbd4f60beb519e0ba3e625ed3da04671c4818c52a28e9a1e8630acc0365dde080a18d89caa9376c462598a60657e868373524fa8c637aa8193f0acf118b351fb8906509a6c26cee2dce8d4c78209dfbf26ff6a4df97deedf2678f9550a</pre><pre id="certificate22">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:46:21 2023
+Action: task5x
+Points: 0
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+1, 2, 3
+
+task2asatin=true
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+1 , 2
+
+task2bsatin=true
+task2bvalidin=false
+
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=true
+task3bsatin=true
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+¬ ∀x:ℕ[2]. p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y])
+
+task5bin=// Task 5b: push the negation inside
+¬ ((∃x:ℕ[2]. p[x]) ∧ (∀x:ℕ[2]. ∃y:ℕ[2]. p[y] ∧ (q[x][y] ∨ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmp2udgi_87
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing task5x().
+Execution completed (446 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature22">8b9af5a84c710747804baa823b15a7aff6f1d366a1921834f4b72881e0cbcd05eba5360df964694dc446c052f7c20411187f1ee4817d3ada9fda77daf8c745dd9f62c1d516be2a8c3088e3e8af1cffc6dbcc4547a55c0c548d6169903e06d6e3b22407274ff26d2edb6b437d850c6a16a0c1759746bc8c9d44de63f68fc4124d7465e629dada935b8c3a3c4cb8119ea958a1fd079699f33df533e98a85d9a2a5ee2cccb33497a74b3d8565efb58d9b91e0aafd3cd6eca0dfa8939903cee53f877671ab33d127c18679049b464cb6264974970b23ae3efd52a00a39eb16e1f0ad553f0fcfb3437dc89a57c40c3c0c1b3812a784caf5ea7f09bea7e6ea0177a7f4</pre><pre id="certificate23">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:48:13 2023
+Action: task5a
+Points: 1
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+1, 2, 3
+
+task2asatin=true
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+1 , 2
+
+task2bsatin=true
+task2bvalidin=false
+
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=true
+task3bsatin=true
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+∃x:ℕ[2]. ¬ (p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y]))
+
+task5bin=// Task 5b: push the negation inside
+¬ ((∃x:ℕ[2]. p[x]) ∧ (∀x:ℕ[2]. ∃y:ℕ[2]. p[y] ∧ (q[x][y] ∨ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmplhjpeb05
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing task5a().
+Execution completed (1037 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature23">94f9437291645bfb165c686b11a086512f36e1878f633867ac5767d17da6509f0b1cce31a6ab448f4cbd48f37073c0b313b5e34440b6c9b8905db09361e22d12c1c309bb6955061e52fb422870cd16da792199f591334c9b4f3136fdf4d121a8a741c72e321551bb602ecf1ed64da41b18eb12c7f6d36d70758fe8d0ac96af7e715a4ad28d35916c63da31a7593c1b3fd211cc48d85f5828ba924ae34385d88bdadb960b6f763b7c1a8495f376a93fa823dccc34c3943d3c14d5756baf3b63c44efb55334bbbc025bfb062f798f0d9274c62b7433f8dbee5544c307a671f683b274cfdf88cabb7bb15d4a04dac7c455187b07e258c8b79afa28fe14859682fe9</pre><pre id="certificate24">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:53:01 2023
+Action: task5b
+Points: 1
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+1, 2, 3
+
+task2asatin=true
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+1 , 2
+
+task2bsatin=true
+task2bvalidin=false
+
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=true
+task3bsatin=true
+task3xsatin=true
+task4ain=false
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+∃x:ℕ[2]. ¬ (p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y]))
+
+task5bin=// Task 5b: push the negation inside
+(∀x:ℕ[2]. ¬ p[x]) ∨ (∃x:ℕ[2]. (∀y:ℕ[2]. ¬ p[y] ∨ (¬ q[x][y] ∧ ¬ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmp0ukkb0db
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing task5b().
+Execution completed (1199 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature24">2ba62f9336e8e97f30ccf7d91254414dcc40b94af93ac54909a38b9e122152a41156dfb9449b5423bbbad2eca9ae28989db6f12da4f9ab0786a0581474d4546f47b1e884985f79768badc88516a7612fec729aa511517f6626aa75fe28f09231084bd477cc78a8e6011b7381d1a1e136f21c0ab7a0d0c590d7cea6c22866a3fe11a6a3c332c76f9a8969439df363a6dcfe511f744066e201e71f76b1d6875f68a0dfb5a5e4ec95f22c8f470c57cb50dc1a4559ed5cbed28f3836d48446bf5a14095798399115112cde7645ae9ec3d81bac81d1a61a9807e524eb295f1c7b2173666616b042a9168ad5caa97e39dc2065eb4815b9e651e0036a0795a9dd65afcf</pre><pre id="certificate25">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:54:00 2023
+Action: task4aa
+Points: 1
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+1, 2, 3
+
+task2asatin=true
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+1 , 2
+
+task2bsatin=true
+task2bvalidin=false
+
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=true
+task3bsatin=true
+task3xsatin=true
+task4ain=true
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+∃x:ℕ[2]. ¬ (p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y]))
+
+task5bin=// Task 5b: push the negation inside
+(∀x:ℕ[2]. ¬ p[x]) ∨ (∃x:ℕ[2]. (∀y:ℕ[2]. ¬ p[y] ∨ (¬ q[x][y] ∧ ¬ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmp6i9qf450
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing task4aa().
+Execution completed (194 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature25">85b46957395c3f4d6789d3cb054d91738dd4f1a9e3bbe74b3db922107d3d1e9df9f6426cf464fea1e902520ddd58c837ece19843cd89261d88af42bceec2bb6c0c17ea2129bde7bc3dc80452914a5bd2c652d8e67ba84bbb9c4e688f89621d5761b58bfe49cc8c6ee81d5bcf47b253ef0fcfcd7a07ad60f5bdfc20f72ae72d6000fb2aa431f4edff4741cbf1ddf555951492537207d0c80df3f6d5eea89a085a2a4f9ba588ff6c6288889be9d5952afab90e20dc3fb1ead34ce9232aac41a519c487ff7ffbdc84f6f788c0d098381d6aedefc4d3adfed4848156a7632068c955546497b8bd12e690860bcb81b8fc64d49fe48de192c3f96cb62a34cc8fccc967</pre><pre id="certificate26">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:54:23 2023
+Action: task4ba
+Points: 1
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=true
+qin4b1=true
+qin4b2=true
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+1, 2, 3
+
+task2asatin=true
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+1 , 2
+
+task2bsatin=true
+task2bvalidin=false
+
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=true
+task3bsatin=true
+task3xsatin=true
+task4ain=true
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+∃x:ℕ[2]. ¬ (p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y]))
+
+task5bin=// Task 5b: push the negation inside
+(∀x:ℕ[2]. ¬ p[x]) ∨ (∃x:ℕ[2]. (∀y:ℕ[2]. ¬ p[y] ∨ (¬ q[x][y] ∧ ¬ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpjsb59iw3
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing task4ba().
+Execution completed (58 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature26">8e18959e5661e5db21468290336de17009d7ddb292b097b88daa0fe777d6a5616389c37f117178e14bf2b17049d1dd2d984f9634716723af752a424d623fb3359cd5d5c7cd53ae2605040ec4bd9d7b78362e36d486f7a83726efae2c5afad09a929849c1b520cfc230ac8b997d53bbe1703559e3d078cfc3a7b408704b29564354e373e6fac47982a9100f5478f804e0239b5648432bfcc48aa348c45dcaf0f1af69485392a372bc05db2eefd230699039f58d4fdc8759dc31aeed092f2e113eb88dbb05fa2203cdb643d15c570b83b235a14c53ee5b7fed0409adc98c0bcc59c73f06f8d1ae422b76f25e305d987771b2efb5448e4028e87144a7b436f475a9</pre><pre id="certificate27">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:55:05 2023
+Action: task4bb
+Points: 1
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=false
+qin4b1=false
+qin4b2=false
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=false
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+1, 2, 3
+
+task2asatin=true
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+1 , 2
+
+task2bsatin=true
+task2bvalidin=false
+
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=true
+task3bsatin=true
+task3xsatin=true
+task4ain=true
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+∃x:ℕ[2]. ¬ (p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y]))
+
+task5bin=// Task 5b: push the negation inside
+(∀x:ℕ[2]. ¬ p[x]) ∨ (∃x:ℕ[2]. (∀y:ℕ[2]. ¬ p[y] ∨ (¬ q[x][y] ∧ ¬ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpqk0n00_q
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing task4bb().
+Execution completed (175 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature27">73c14ff5a4883c1f68c3f33c074b58f6a5ab892c4a2d1c92dab006e431903a0fd90b7f8681ede982c1577ca798314d2ea3478c06bbe01cdaa6385272c66dd97daca53bf5a13fc6999f71d9ac7381635859bb40f595d555763e725c5f74ad66148c21c7b2cc514544e1a4826f9334ac89338f16def58ca612250f347d73ffea7fb36f697c157472df1a26ba458f9a8e95fbfe6bc73c7d5de8a7b7c2017f20cd0f9ff7c054baad57a720766050b7a114e74dc2864dbc001244e853f363f5667fd5a56d408c38433e015a55b88e57f797b7b7bcb70a03243caae435d5a68fd96d388c6056b6b36270c13fab37259ef5c9305199495901e90f22962e10167f67289b</pre><pre id="certificate28">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:55:59 2023
+Action: task1bsat
+Points: 1
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=false
+qin4b1=false
+qin4b2=false
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=true
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+1, 2, 3
+
+task2asatin=true
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+1 , 2
+
+task2bsatin=true
+task2bvalidin=false
+
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=true
+task3bsatin=true
+task3xsatin=true
+task4ain=true
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+∃x:ℕ[2]. ¬ (p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y]))
+
+task5bin=// Task 5b: push the negation inside
+(∀x:ℕ[2]. ¬ p[x]) ∨ (∃x:ℕ[2]. (∀y:ℕ[2]. ¬ p[y] ∨ (¬ q[x][y] ∧ ¬ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpebitr4qd
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing sat1b().
+Execution completed (27 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature28">267bdd26d427f4ab0842a60de0aab16e2337d803ad6f3bc14746f29a0b6f618210f98554d4405397d7c442eb69b9b9ccb5dc0baab17a4c3b0a64c40573b9feb11808896ca592c365bd05d9fb3d5174ebcdbe5c952d1de8f1a84ece79f0309ada74cca2cb290ae2ec9b19a84b3ed444c9bad085d98a1ba37d0dda2793e84be2bb3658a17600efc4a5b6798c812d080d0fb07b5bcfe445c467ff99b1464e0781bf8703f693b94bab8b96154ac51c127d0e267eb5bf7becc947066c02449ffb30729d68867665da0cb12a132ebbf8c176359931e51a6f37d83598ed724c6f7f7e41c274b46a91f058cb4a6e797c0199a2228ea757e6a7c988c7d1f6d6b1e1e99498</pre><pre id="certificate29">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:56:04 2023
+Action: task1bvalid
+Points: 1
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=false
+qin4b1=false
+qin4b2=false
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=true
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+1, 2, 3
+
+task2asatin=true
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+1 , 2
+
+task2bsatin=true
+task2bvalidin=false
+
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=true
+task3bsatin=true
+task3xsatin=true
+task4ain=true
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+∃x:ℕ[2]. ¬ (p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y]))
+
+task5bin=// Task 5b: push the negation inside
+(∀x:ℕ[2]. ¬ p[x]) ∨ (∃x:ℕ[2]. (∀y:ℕ[2]. ¬ p[y] ∨ (¬ q[x][y] ∧ ¬ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpfwx333p2
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing valid1b().
+Execution completed (9 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature29">2f09f74e41e998d8027942e5d841cac650da6ee95ad375546d4ba4f9da09a4b0608e82305beadc32caba66983f16129f49411adda744b40c5cc46f7bd39cab57f5d71b68c30d391ae84cc18d7b226f789626992055728e87adc84bddd57f2f00ecc20f510c1ee1d02e223bf1ff4458c46739e8f92b622971e3c083fd234c2c898bd8315921fe60e53a70e5fbcf91ea769b3e0f15b809875882f7409fd667a2ac90f8d160f76d8f4f3e4621fc40cadc7a2b21939bdb76394bb35d2b70a58a48703b5aa8137413e78db316ec19747d3e0c37c4ee98b1215c834945a340e0f89aff30fd6519680a53059f992710914fd8c69712001ab5b7a1a90290f21ba4316b43</pre><pre id="certificate30">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:56:08 2023
+Action: task1bhelp
+Points: 0
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=false
+qin4b1=false
+qin4b2=false
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=true
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+1, 2, 3
+
+task2asatin=true
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+1 , 2
+
+task2bsatin=true
+task2bvalidin=false
+
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=true
+task3bsatin=true
+task3xsatin=true
+task4ain=true
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+∃x:ℕ[2]. ¬ (p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y]))
+
+task5bin=// Task 5b: push the negation inside
+(∀x:ℕ[2]. ¬ p[x]) ∨ (∃x:ℕ[2]. (∀y:ℕ[2]. ¬ p[y] ∨ (¬ q[x][y] ∧ ¬ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpw_lba3u3
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing num1b().
+Run of deterministic function num1b():
+Result (19 ms): 12
+Execution completed (19 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature30">824e5b0092abe744326bc5ffd5702ef3d61b0d3bb981bb7b7f379e5447223895d040441bc527f9ecc78d403e140a5ea688b27e0407c27f7ab3267057050fcd384f6148e94655a6a640a20a9107cfb1fb2af7cb823fb0bd835021d824024fa3c11949f87336384d8a0272374f88796939b4c7136d46b1ff7b3c62ecde116957253bad9b51eb086442afe1c4b595b53c4b802fcd04b1be9cb5a1978e7684b0cfb22dd15b56ac2f1e9f7f09620692ebb69b055107eeb58629d86d05f270fa9f5aa5d80105fc4a0b0b5f732305f880fd150fc47f4a879a7f172d21ef17edbe87aaa57dbdb9b00d530a086693ac8856039e5b0219866d543b870805e7e34fa2feae89</pre><pre id="certificate31">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSemantics4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov 13 17:56:24 2023
+Action: task3bsat
+Points: 1
+Inputs: 
+pin4a0=false
+pin4a1=false
+pin4a2=false
+pin4b0=true
+pin4b1=true
+pin4b2=true
+pin4x0=true
+pin4x1=true
+pin4x2=false
+qin4a0=false
+qin4a1=false
+qin4a2=false
+qin4b0=false
+qin4b1=false
+qin4b2=false
+qin4x0=false
+qin4x1=false
+qin4x2=true
+task1ain=// Task 1a: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1asatin=true
+task1avalidin=false
+task1bin=// Task 1b: give the satisfying assignments of above formula
+&lt;&lt; 0 , 0 &gt;&gt; , &lt;&lt; 0 , 1 &gt;&gt; , &lt;&lt; 0 , 2 &gt;&gt; , &lt;&lt; 0 , 3 &gt;&gt; ,
+&lt;&lt; 1 , 0 &gt;&gt; , &lt;&lt; 1 , 1 &gt;&gt; , &lt;&lt; 1 , 2 &gt;&gt; , &lt;&lt; 1 , 3 &gt;&gt; ,
+&lt;&lt; 2 , 0 &gt;&gt; , &lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 2 , 2 &gt;&gt; , &lt;&lt; 2 , 3 &gt;&gt; ,
+&lt;&lt; 3 , 0 &gt;&gt; , &lt;&lt; 3 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; , &lt;&lt; 3 , 3 &gt;&gt;
+
+task1bsatin=true
+task1bvalidin=false
+task1xin=// Example: give the satisfying assignments of above formula
+&lt;&lt; 2 , 1 &gt;&gt; , &lt;&lt; 3 , 2 &gt;&gt; 
+
+task1xsatin=true
+task1xvalidin=false
+task2ain=// Task 2a: give the satisfying assignments of above formula
+1, 2, 3
+
+task2asatin=true
+task2avalidin=false
+task2bin=// Task 2b: give the satisfying assignments of above formula
+1 , 2
+
+task2bsatin=true
+task2bvalidin=false
+
+task2xin=// Example: give the satisfying assignments of above formula
+1, 2, 3
+
+task2xsatin=true
+task2xvalidin=false
+task3asatin=true
+task3bsatin=true
+task3xsatin=true
+task4ain=true
+task4bin=false
+task4xin=false
+task5ain=// Task 5a: push the negation inside
+∃x:ℕ[2]. ¬ (p[x] ⇒ (q[x][x] ∨ ∃y:ℕ[2]. q[x][y] ∧ p[y]))
+
+task5bin=// Task 5b: push the negation inside
+(∀x:ℕ[2]. ¬ p[x]) ∨ (∃x:ℕ[2]. (∀y:ℕ[2]. ¬ p[y] ∨ (¬ q[x][y] ∧ ¬ q[y][x])))
+
+task5xin=∃x:ℕ[2]. p[x] ∧ ∀y:ℕ[2]. ¬ q[x][y]
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpb4qnh3di
+Computing the value of a1x...
+Computing the value of a1a...
+Computing the value of a1b...
+Computing the value of a2x...
+Computing the value of a2a...
+Computing the value of a2b...
+Type checking and translation completed.
+Executing sat3b().
+Execution completed (24 ms).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature31">a8ab365bd793bde8917f40fb71e27890202a0854cc32fe0bf2491e2288e5f70f28c5a18a96cb75c6f8afd0d82c5a799beb45fb8b895e77c6d735959a2200074ef107a8f31646822e6b43f62c0927db8e1769b079d6c9d6b97e5e582dec651b35fc44c62c09a7df605e86e76747de2bc8a2dd32496c64e0bf5b0629fe3ff293de135ca1ce51b587d30b6ee2e1d014a30ccdd811ae2c760982a5128a7cf65e64d73ff74cb8dd95bd20b0baab6df741024505ccdfd854e467e766c6c057f4c9beeaa4f2299053b0aeea31301bf1ec635ca59fa9b73552b18ceab29c2baa9eb5ba1ba881eafb1835b2617be82e8bb94aa209b85484e3660dafafaeca8d2a59595707</pre></body>
+</html>

@@ -1,0 +1,54 @@
+Collaborative filtering (CF):
+Recommend to target user items that
+other similar users liked in the past
+
+Content-based filtering (CBF):
+Recommend to target user content similar
+to what he or she liked in the past
+
+Context-aware recommender system (CARS):
+Recommend to target user items that he, she,
+or other users liked in a given context or situation
+
+Hybrid RS: Any combination of the above
+
+
+A. Problems of Recommender Systems
+Despite all their benefits, recommender systems suffer from shortcomings and problems, including…
+• Cold-start problem (new users or new items unknown to the system)
+• Privacy and security concerns
+• Lack of transparency and explainability
+• Over-personalization → users get stuck in a “filter bubble” → less diverse results
+• Exploration vs. exploitation
+• Biases (e.g., popularity or demographic)
+• Fairness and discrimination
+
+B. Biases in Recommender Systems
+
+
+Decisions made by RSs are affected by various
+biases (influencing each other), originating from:
+• Data: e.g., unbalanced dataset w.r.t. group of
+users → demographic bias, community bias
+• Algorithms: e.g., reinforcing stereotypes or
+amplify already popular content
+(“rich get richer” effect) → popularity bias
+• Presentation: e.g., positions of recommended
+items on screen
+• User cognition or perception: e.g., serial position
+effect, confirmation bias
+
+C. Strategies to Mitigating Harmful Biases
+Pre-processing strategies
+• Data rebalancing (e.g., upsample minority group, subsample
+majority group)
+In-processing strategies
+• Regularization (e.g., include bias correction term/bias metric in
+loss function used to train a model)
+• Adversarial learning (e.g., train a classifier that predicts the
+sensitive attribute and adapt model parameters to minimize
+performance of this classifier)
+Post-processing strategies
+• Reweigh/Rerank items in recommendation list
+• Filter items (e.g., remove items from overrepresented groups)
+

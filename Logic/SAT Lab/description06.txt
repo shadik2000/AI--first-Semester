@@ -1,0 +1,76 @@
+Lab Exercise 1: Sudoku
+Sudoku solving using propositional logic:
+	
+	We can solve the sudoku-problem by expressing rules and initial state as a propositional formula. Let, there be a propositional atom xijn, which means that at row i and column j contains digit n. In this section we call the set of all possible numbers N.
+
+N =  {1,2,3,4}
+
+Let’s begin with encoding the rules according to question, that is:
+
+Given a 4 × 4 grid, fill each of the small fields with one of the numbers 1, 2, 3, 4 such that: 
+
+(1) no number occurs twice in a row, 
+(2) no number occurs twice in a column, and 
+(3) that no number occurs twice any 2 × 2 grid
+
+Modeling the rules
+
+First Constraint: Expressing that there is at least one number in one cell we encode:
+
+Aij = (xij1 ? xij2 ? xij3 ? xij4)
+
+To express that there is at least one number in each cell we conjunct all Aij 
+A = ? i,j?N Aij 
+
+A = A11 ? A12 ? A13 ? … ? A43 ?44
+Second Constraint:
+
+To express there is at most one digit in each cell, we have to exclude that for every possible digit pair xijn and xijm (where n ? m) are both true for the same cell.
+Cij = ? n,m?D n?m ¬(xijn ? xijm)
+
+Cij =¬(xij1 ? xij2) ? ¬(xij1 ? xij3) ? ¬(xij1 ? xij4)  ? ¬(xij2 ? xij3) ? ¬(xij2 ? xij4) ? ¬(xij3 ? xij4) 
+
+
+To express that there is at most one number in each cell we conjunct all Cij i.e
+C = ? i,j?N Cij
+C = C11 ? C12 ? C13 ? … ? C43 ? C44
+
+Third Constraint: In each row, a number only shows up once. As we go through rows with the same digit, we notice a pattern similar to what's described in constraint 2. For everything to be true at the same time, we need to rule out all possible combinations of pairs of rows. The notation R indicates that a number "n" can only appear once in each row.
+
+Rin = ? j?N ?4 k=j+1 ¬ (xijn ? xikn)  
+R = ? i,n?N Rin
+Fourth Constraint:
+
+No number occurs twice in a column, is the same as constraint 3 but we go through columns this time. D expresses that a number n appears at most once in each column.
+
+Djn = ? i?N ?4 k=i+1 ¬ (xijn ? xkjn)
+D = ? j,n ? N Rjn
+Fifth Constraint:
+
+Also, a number appears at most once in each 2x2 sub-grid, we use the at-most pattern,
+
+G= {{1,2}, {3,4}}
+Tn = ? (i,j),(k,l)?I×J I,J?G ¬(xijn ? xkln)
+T = ? n?N Tn
+
+Modeling the facts:
+
+The initial setup of the sudoku shown in Sudoku06 represented as propositional formula is:
+
+S = x221 ? x324 ? x432 ? x443
+
+
+
+Now the final step is to conjunct all the formulas that we earlier derive with S, that is
+
+S ? A ? C ? R ? D ? T -------------- 1
+
+At last, to solve the sudoku problem, formula 1 should find a satisfying assignment if it is satisfiable else show that the formula is unsatisfiable in limboole.
+
+
+
+Link:
+
+I tried zoom cloud recording but could not do it because it asked to take subscription so, I uploaded my video on google drive and here is the link to the video:
+
+https://drive.google.com/uc?id=1vVx0WI8TuKbhBjMSdqPqedyX7ZQJDHZK&export=download

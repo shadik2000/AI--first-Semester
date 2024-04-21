@@ -1,0 +1,12 @@
+Name: Mohammad Shadik Ansari
+Student number: 12340306
+Number of solutions: 6
+Solutions: 
+(d | !c | !e | a) 
+(c | b | a | !d) 
+(!d | !b | c | e)
+(a | !d | !c | b)
+(b | !a | !d | !c)
+(!d | !b | !c | !e)
+
+ 

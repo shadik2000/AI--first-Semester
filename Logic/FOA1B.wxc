@@ -1,0 +1,1021 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+</head>
+<body>
+<pre id="certificate">&lt;&lt;&lt;EXERCISE CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSyntax4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov  6 15:13:51 2023
+Successes: 16
+Points: 12
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature">08d79e84f66fd1eff3bffd704ebbdc05b6afb05cf1b89d29d7c3083b19501a6f35d8fbf776db303f48ebe1da57fb5b40f58f7fba53245d95f3a1f1b83cc017bb6718dafd2862ca115f1a20a59655b1c944c5fb4debe7b3ad0812a909a02995ea3d39a3cd47ba7456d50d484b4b3c1e778d8940efc60cb80ecc5ab5a37041e758a79ac53d2cdacf7889e0d1d3b5f90d42eb11e311ccd5f7e94dbd70bafc139259913d48ec0907f5fa141073015b1d90458b48ac387357b389806eb51064d41f51adfb609f1987e92e26b69652ec6233bf640491d87d17f78cc17d5190f9c1ecb724f1b56299ae6d9499348fdbb503c845e29abf5be9cdb89f7320c0449c477582</pre><pre id="certificate0">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSyntax4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov  6 14:55:46 2023
+Action: task1x
+Points: 0
+Inputs: 
+task1ainput=// Task 1a: add here 4 pairs of parentheses ()
+p[x] ∧ q[x] ⇒ ¬ r[x] ∨ s[x]
+
+task1binput=// Task 1b: add here 5 pairs of parentheses ()
+p[x] ∧ ¬ ∀y:D. q[y] ⇔ p[y] ∧ r[x][y]
+
+task1cinput=// Task 1c: add here 7 pairs of parentheses ()
+∃y:D. p[x] ⇒ r[x][y] ∧ ¬ r[y][x] ∨ ∀z:D. p[z] ⇒ r[y][z]
+
+task1xinput=// Example: add 3 pairs of parentheses () to "¬ p[x] ∧ q[x] ⇒ r[x]"
+(((¬ p[x]) ∧ q[x]) ⇒ r[x]) 
+
+task2ainput=// Task 2a: add here 7 pairs of parentheses ()
+∀y:D. x ⋅ y = 1 + y ⇒ ¬ 0 = y
+
+task2binput=// Task 2b: add here 11 pairs of parentheses ()
+∀y:D. x + 1 &gt; y ⇒ ¬ ∃z:D. z &gt; 0 ∧ x + y ⋅ z = 1
+
+task2cinput=// Task 2c: add here 11 pairs of parentheses ()
+∃x:D. ¬ 0 &lt; x ∧ ∃z:D. ¬ x + y = z ∧ x + z = y
+
+task2xinput=// Example: add 3 pairs of parentheses () to "∃y:D. x + 1 = y"
+(∃y:D. ((x + 1) = y))
+
+task3inputa=// Task 3a: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputb=// Task 3b: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputc=// Task 3c: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputx=// Example: remove from "x:D, y:D, z:D" the variable "y:D" which is not free in the formula below
+x:D, z:D
+task4ainput=// Task 4a: replace "⊤" by the formula for above statement
+⊤
+
+task4binput=// Task 4b: replace "⊤" by the formula for above statement
+⊤
+
+task4cinput=// Task 4c: replace "⊤" by the formula for above statement
+⊤
+
+task4xinput=// Example: give here the formula for above statement
+x &gt; 0 ∧ ¬∃y:D. y &gt; 0 ∧ y &lt; x
+
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpgsur5ynl
+Computing the value of N...
+Type checking and translation completed.
+Executing correctPar1x(ℤ,Array[Bool],Array[Bool],Array[Bool]) with all 1536 inputs.
+Execution completed for ALL inputs (47 ms, 1536 checked, 0 inadmissible).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature0">a6e05c194ebe1169e72eed85119d45152ec243ec2fe06e6532a68817121fec0ded2b8d1c028163b161277042480a0fdf984d73a828db242dea5e94751fbbd4fdf19309f0cbe852deb4b3c7f3b6b354e12bc5ad47a0f48bd507a4411a9dde3a7466a231b296172cb16cd6f9d0c61df7c425d0ff439b804af659e8fa5e2aa1672cfa1c9284a990bae10d5f32ae0d7b8ef14330e536649edca912fb6f4440782c0e1b97fc5e430f580f69345135df9c271dd6ae2ed6211446f0dc0ab50fa8155d67b5dd7038c6bc63bb7ef019b32007d29e03ecee1b50bbb14711f759799b7f65ad50ec0044cd611a46849f49243518975cf754b9b0daf2aa1f154a64b6ddaeac8e</pre><pre id="certificate1">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSyntax4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov  6 14:56:48 2023
+Action: task1a
+Points: 1
+Inputs: 
+task1ainput=// Task 1a: add here 4 pairs of parentheses ()
+((p[x] ∧ q[x]) ⇒ ((¬ r[x]) ∨ s[x]))
+task1binput=// Task 1b: add here 5 pairs of parentheses ()
+p[x] ∧ ¬ ∀y:D. q[y] ⇔ p[y] ∧ r[x][y]
+
+task1cinput=// Task 1c: add here 7 pairs of parentheses ()
+∃y:D. p[x] ⇒ r[x][y] ∧ ¬ r[y][x] ∨ ∀z:D. p[z] ⇒ r[y][z]
+
+task1xinput=// Example: add 3 pairs of parentheses () to "¬ p[x] ∧ q[x] ⇒ r[x]"
+(((¬ p[x]) ∧ q[x]) ⇒ r[x]) 
+
+task2ainput=// Task 2a: add here 7 pairs of parentheses ()
+∀y:D. x ⋅ y = 1 + y ⇒ ¬ 0 = y
+
+task2binput=// Task 2b: add here 11 pairs of parentheses ()
+∀y:D. x + 1 &gt; y ⇒ ¬ ∃z:D. z &gt; 0 ∧ x + y ⋅ z = 1
+
+task2cinput=// Task 2c: add here 11 pairs of parentheses ()
+∃x:D. ¬ 0 &lt; x ∧ ∃z:D. ¬ x + y = z ∧ x + z = y
+
+task2xinput=// Example: add 3 pairs of parentheses () to "∃y:D. x + 1 = y"
+(∃y:D. ((x + 1) = y))
+
+task3inputa=// Task 3a: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputb=// Task 3b: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputc=// Task 3c: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputx=// Example: remove from "x:D, y:D, z:D" the variable "y:D" which is not free in the formula below
+x:D, z:D
+task4ainput=// Task 4a: replace "⊤" by the formula for above statement
+⊤
+
+task4binput=// Task 4b: replace "⊤" by the formula for above statement
+⊤
+
+task4cinput=// Task 4c: replace "⊤" by the formula for above statement
+⊤
+
+task4xinput=// Example: give here the formula for above statement
+x &gt; 0 ∧ ¬∃y:D. y &gt; 0 ∧ y &lt; x
+
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpvalwtek5
+Computing the value of N...
+Type checking and translation completed.
+Executing correctPar1a(ℤ,Array[Bool],Array[Bool],Array[Bool],Array[Bool]) with all 12288 inputs.
+Execution completed for ALL inputs (102 ms, 12288 checked, 0 inadmissible).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature1">1c08dac2ecbc53802ff79a4fa9baa5a24cdc1dee74501aa546e0caae4d6cd5bcaff6d82ef032ece3743aaa5cce2c95d5342c7ab3b2cb7697f954b9ca09cc6061a0ddf7cf484a7201da605dfee654f230655cb32646a82f57a4221c63c021f0965a80a8197ba0a4bf1bc3289b6e7da146ee76d326f03d1989f03917ea4c81f378e037c85ab1f89af8d48b618c3ef4ed6d1c647cd63be517a46947634c98ad40ffec842df9a4b94922d8fc1d6fbc174a33ff7de080cdb4cf2efd9ba2559a90a33e480bac7c4d262e11af6259efdc1e43ed9f3e09b6cc1044ec65296b5a00cf2a430e4d5f86cbc1c4d9d7ccc19074cb38612d41c6a2ecaf934800eb1da99a464a33</pre><pre id="certificate2">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSyntax4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov  6 14:57:59 2023
+Action: task1b
+Points: 1
+Inputs: 
+task1ainput=// Task 1a: add here 4 pairs of parentheses ()
+((p[x] ∧ q[x]) ⇒ ((¬ r[x]) ∨ s[x]))
+task1binput=// Task 1b: add here 5 pairs of parentheses ()
+((p[x]) ∧ (¬ ∀y:D. q[y] ⇔ ((p[y]) ∧ r[x][y])))
+
+task1cinput=// Task 1c: add here 7 pairs of parentheses ()
+∃y:D. p[x] ⇒ r[x][y] ∧ ¬ r[y][x] ∨ ∀z:D. p[z] ⇒ r[y][z]
+
+task1xinput=// Example: add 3 pairs of parentheses () to "¬ p[x] ∧ q[x] ⇒ r[x]"
+(((¬ p[x]) ∧ q[x]) ⇒ r[x]) 
+
+task2ainput=// Task 2a: add here 7 pairs of parentheses ()
+∀y:D. x ⋅ y = 1 + y ⇒ ¬ 0 = y
+
+task2binput=// Task 2b: add here 11 pairs of parentheses ()
+∀y:D. x + 1 &gt; y ⇒ ¬ ∃z:D. z &gt; 0 ∧ x + y ⋅ z = 1
+
+task2cinput=// Task 2c: add here 11 pairs of parentheses ()
+∃x:D. ¬ 0 &lt; x ∧ ∃z:D. ¬ x + y = z ∧ x + z = y
+
+task2xinput=// Example: add 3 pairs of parentheses () to "∃y:D. x + 1 = y"
+(∃y:D. ((x + 1) = y))
+
+task3inputa=// Task 3a: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputb=// Task 3b: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputc=// Task 3c: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputx=// Example: remove from "x:D, y:D, z:D" the variable "y:D" which is not free in the formula below
+x:D, z:D
+task4ainput=// Task 4a: replace "⊤" by the formula for above statement
+⊤
+
+task4binput=// Task 4b: replace "⊤" by the formula for above statement
+⊤
+
+task4cinput=// Task 4c: replace "⊤" by the formula for above statement
+⊤
+
+task4xinput=// Example: give here the formula for above statement
+x &gt; 0 ∧ ¬∃y:D. y &gt; 0 ∧ y &lt; x
+
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpsudjn716
+Computing the value of N...
+Type checking and translation completed.
+Executing correctPar1b(ℤ,Array[Bool],Array[Bool],Array[Array[Bool]]) with all 98304 inputs.
+Execution completed for ALL inputs (521 ms, 98304 checked, 0 inadmissible).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature2">9909f7712f055e0dc6f193e822398fd8f908d9ad839cd136606fff9cadb4047e6deede80840ea047282b31e40960ed4f38e530adc6451436a3b2f794ed503d38c1fb99f4f2f80a9eccdb1721a442b7900bd8a163a92ea09add73dc02e08321565dc4c8b3a8e23a0c37cc07b1297f69f45a0882a5fabb0d20cee0614d47468b92f7a9e6310404cbfa08cb4a6bf67ed6c436ab407e520e6311c62fda2ec5ee33621029048b531df35e52fdac9fe66a1f516e68df6e0dbfd559552b13e8d14bcd3f0d677b1c4ab09f28751b8ca00ca26de622fe26712cfb88e707353ac042763efe4348e2efbc94a0a7f289c87c2722195bd519b6396a3be7dc54de02e612402f44</pre><pre id="certificate3">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSyntax4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov  6 14:58:20 2023
+Action: task1c
+Points: 1
+Inputs: 
+task1ainput=// Task 1a: add here 4 pairs of parentheses ()
+((p[x] ∧ q[x]) ⇒ ((¬ r[x]) ∨ s[x]))
+task1binput=// Task 1b: add here 5 pairs of parentheses ()
+((p[x]) ∧ (¬ ∀y:D. q[y] ⇔ ((p[y]) ∧ r[x][y])))
+
+task1cinput=// Task 1c: add here 7 pairs of parentheses ()
+((∃y:D. p[x] ⇒ ((r[x][y] ∧ ((¬ r[y][x]))) ∨ (∀z:D. p[z] ⇒ r[y][z]))))
+
+task1xinput=// Example: add 3 pairs of parentheses () to "¬ p[x] ∧ q[x] ⇒ r[x]"
+(((¬ p[x]) ∧ q[x]) ⇒ r[x]) 
+
+task2ainput=// Task 2a: add here 7 pairs of parentheses ()
+∀y:D. x ⋅ y = 1 + y ⇒ ¬ 0 = y
+
+task2binput=// Task 2b: add here 11 pairs of parentheses ()
+∀y:D. x + 1 &gt; y ⇒ ¬ ∃z:D. z &gt; 0 ∧ x + y ⋅ z = 1
+
+task2cinput=// Task 2c: add here 11 pairs of parentheses ()
+∃x:D. ¬ 0 &lt; x ∧ ∃z:D. ¬ x + y = z ∧ x + z = y
+
+task2xinput=// Example: add 3 pairs of parentheses () to "∃y:D. x + 1 = y"
+(∃y:D. ((x + 1) = y))
+
+task3inputa=// Task 3a: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputb=// Task 3b: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputc=// Task 3c: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputx=// Example: remove from "x:D, y:D, z:D" the variable "y:D" which is not free in the formula below
+x:D, z:D
+task4ainput=// Task 4a: replace "⊤" by the formula for above statement
+⊤
+
+task4binput=// Task 4b: replace "⊤" by the formula for above statement
+⊤
+
+task4cinput=// Task 4c: replace "⊤" by the formula for above statement
+⊤
+
+task4xinput=// Example: give here the formula for above statement
+x &gt; 0 ∧ ¬∃y:D. y &gt; 0 ∧ y &lt; x
+
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpgm4ug91h
+Computing the value of N...
+Type checking and translation completed.
+Executing correctPar1c(ℤ,Array[Bool],Array[Array[Bool]]) with all 12288 inputs.
+Execution completed for ALL inputs (219 ms, 12288 checked, 0 inadmissible).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature3">9e62378b52e940bcd370f8f302dbacace517a0f4ba1cd4cc9fe262e3ef0a71bc5bf7af3aa82bf17b8f48502562f33e1985a896db4a19cc903d03ddb04764a3a2edb4072d189c50971a72dd6daf8371d43c88e4c40121541786c82432c570016b88c970f2e8908d8be805a250e8c3f9de30e78cd8f8682b02c9d6d1832195c1d236a9e6ffc1be018652e2e1ceb5a81f2c62ae0cfc510d67d6c7dcf4f2d4f754c65056ad3edc71971b840497635c86e62c8601fb15d2d0b4d340a87830697ea8fe01679457f2e921352f8f331559e3fddab61b3c49c5853f548d8d511fc13fda1ac7cc830094bcad5c16003d64ebb7ce6f9e88e392188bbf7e0293d6512dcbc265</pre><pre id="certificate4">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSyntax4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov  6 14:58:32 2023
+Action: task2x
+Points: 0
+Inputs: 
+task1ainput=// Task 1a: add here 4 pairs of parentheses ()
+((p[x] ∧ q[x]) ⇒ ((¬ r[x]) ∨ s[x]))
+task1binput=// Task 1b: add here 5 pairs of parentheses ()
+((p[x]) ∧ (¬ ∀y:D. q[y] ⇔ ((p[y]) ∧ r[x][y])))
+
+task1cinput=// Task 1c: add here 7 pairs of parentheses ()
+((∃y:D. p[x] ⇒ ((r[x][y] ∧ ((¬ r[y][x]))) ∨ (∀z:D. p[z] ⇒ r[y][z]))))
+
+task1xinput=// Example: add 3 pairs of parentheses () to "¬ p[x] ∧ q[x] ⇒ r[x]"
+(((¬ p[x]) ∧ q[x]) ⇒ r[x]) 
+
+task2ainput=// Task 2a: add here 7 pairs of parentheses ()
+∀y:D. x ⋅ y = 1 + y ⇒ ¬ 0 = y
+
+task2binput=// Task 2b: add here 11 pairs of parentheses ()
+∀y:D. x + 1 &gt; y ⇒ ¬ ∃z:D. z &gt; 0 ∧ x + y ⋅ z = 1
+
+task2cinput=// Task 2c: add here 11 pairs of parentheses ()
+∃x:D. ¬ 0 &lt; x ∧ ∃z:D. ¬ x + y = z ∧ x + z = y
+
+task2xinput=// Example: add 3 pairs of parentheses () to "∃y:D. x + 1 = y"
+(∃y:D. ((x + 1) = y))
+
+task3inputa=// Task 3a: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputb=// Task 3b: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputc=// Task 3c: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputx=// Example: remove from "x:D, y:D, z:D" the variable "y:D" which is not free in the formula below
+x:D, z:D
+task4ainput=// Task 4a: replace "⊤" by the formula for above statement
+⊤
+
+task4binput=// Task 4b: replace "⊤" by the formula for above statement
+⊤
+
+task4cinput=// Task 4c: replace "⊤" by the formula for above statement
+⊤
+
+task4xinput=// Example: give here the formula for above statement
+x &gt; 0 ∧ ¬∃y:D. y &gt; 0 ∧ y &lt; x
+
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpdzb0xrsp
+Computing the value of N...
+Type checking and translation completed.
+Executing correctPar2x(ℤ) with all 3 inputs.
+Execution completed for ALL inputs (11 ms, 3 checked, 0 inadmissible).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature4">7076257de5ab3bae2c37f804d1f33892219a38ae3fb041cef220f6cbb921b921a92db2d2f8ee178f7804c8b5d7560894df52fba833a5e57124195d7aab6eab196a85ba106e19e16e22bb9af12076c3ffc81d269da21b14acf93f68654022b3bf4d35ad7528652a12e3570e207022f2b1f1fd7c55f1d9cd1606b34138702245c7b24bcb6fd58bb1f1fe2c8818e34e3415fcad857d76feee02919ea5b4b1de0d9e18362cf3d434df70c8f7c960969ad0b1ba63f8ecb9a11ec313455754056279c6a5f3843900004fda39e8ead735ad12efefdd25453d01a7643077dd2c7229fe1ae281ca7b9d878dbba7c44ca189513624d94dc2874f13009b9fd216fa94d80e69</pre><pre id="certificate5">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSyntax4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov  6 15:02:15 2023
+Action: task2a
+Points: 1
+Inputs: 
+task1ainput=// Task 1a: add here 4 pairs of parentheses ()
+((p[x] ∧ q[x]) ⇒ ((¬ r[x]) ∨ s[x]))
+task1binput=// Task 1b: add here 5 pairs of parentheses ()
+((p[x]) ∧ (¬ ∀y:D. q[y] ⇔ ((p[y]) ∧ r[x][y])))
+
+task1cinput=// Task 1c: add here 7 pairs of parentheses ()
+((∃y:D. p[x] ⇒ ((r[x][y] ∧ ((¬ r[y][x]))) ∨ (∀z:D. p[z] ⇒ r[y][z]))))
+
+task1xinput=// Example: add 3 pairs of parentheses () to "¬ p[x] ∧ q[x] ⇒ r[x]"
+(((¬ p[x]) ∧ q[x]) ⇒ r[x]) 
+
+task2ainput=// Task 2a: add here 7 pairs of parentheses ()
+(∀y:D. ((x ⋅ y) = (1 + y)) ⇒ (¬( 0) = (y)))
+
+task2binput=// Task 2b: add here 11 pairs of parentheses ()
+∀y:D. x + 1 &gt; y ⇒ ¬ ∃z:D. z &gt; 0 ∧ x + y ⋅ z = 1
+
+task2cinput=// Task 2c: add here 11 pairs of parentheses ()
+∃x:D. ¬ 0 &lt; x ∧ ∃z:D. ¬ x + y = z ∧ x + z = y
+
+task2xinput=// Example: add 3 pairs of parentheses () to "∃y:D. x + 1 = y"
+(∃y:D. ((x + 1) = y))
+
+task3inputa=// Task 3a: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputb=// Task 3b: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputc=// Task 3c: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputx=// Example: remove from "x:D, y:D, z:D" the variable "y:D" which is not free in the formula below
+x:D, z:D
+task4ainput=// Task 4a: replace "⊤" by the formula for above statement
+⊤
+
+task4binput=// Task 4b: replace "⊤" by the formula for above statement
+⊤
+
+task4cinput=// Task 4c: replace "⊤" by the formula for above statement
+⊤
+
+task4xinput=// Example: give here the formula for above statement
+x &gt; 0 ∧ ¬∃y:D. y &gt; 0 ∧ y &lt; x
+
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpekkev57s
+Computing the value of N...
+Type checking and translation completed.
+Executing correctPar2a(ℤ) with all 3 inputs.
+Execution completed for ALL inputs (12 ms, 3 checked, 0 inadmissible).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature5">70c3f059323c88ecd40b13a724eb4c28c335243740c4eb6470ffff3073785970928f2e6430b08232385301a8b9a3113d5c51cccb1f90b38cddb0959bfa05a5ed5271a45a82ede8a753fa6e58baec9ee27d188eb0f3e4aba39ee7f0f21f68c5855994f993693b0cccd40e78f8a5ae011eb6d8671cf990ca96651a9ec65bbbd992412c048d7f98b74f1d50fbf16ba33d58f4791241fea0cc15a73b1c0ffca0595cbfa9afcb525915342eaf5426712077dc1e343c419a8fd813de096ac078827d36674bca8a16636b06f2d697a428872b194da604cd964f2c44ee8d6be9a8682adcee0bd7e88814b156d6c8671ec1182f190a5a47b04454f8138bd97a163b9651b8</pre><pre id="certificate6">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSyntax4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov  6 15:04:52 2023
+Action: task2b
+Points: 1
+Inputs: 
+task1ainput=// Task 1a: add here 4 pairs of parentheses ()
+((p[x] ∧ q[x]) ⇒ ((¬ r[x]) ∨ s[x]))
+task1binput=// Task 1b: add here 5 pairs of parentheses ()
+((p[x]) ∧ (¬ ∀y:D. q[y] ⇔ ((p[y]) ∧ r[x][y])))
+
+task1cinput=// Task 1c: add here 7 pairs of parentheses ()
+((∃y:D. p[x] ⇒ ((r[x][y] ∧ ((¬ r[y][x]))) ∨ (∀z:D. p[z] ⇒ r[y][z]))))
+
+task1xinput=// Example: add 3 pairs of parentheses () to "¬ p[x] ∧ q[x] ⇒ r[x]"
+(((¬ p[x]) ∧ q[x]) ⇒ r[x]) 
+
+task2ainput=// Task 2a: add here 7 pairs of parentheses ()
+(∀y:D. ((x ⋅ y) = (1 + y)) ⇒ (¬( 0) = (y)))
+
+task2binput=// Task 2b: add here 11 pairs of parentheses ()
+(∀y:D. (((x + 1) &gt; (y)) ⇒ (¬ ∃z:D. ((z &gt; 0) ∧ (x) + ((y ⋅ z)) = 1))))
+
+task2cinput=// Task 2c: add here 11 pairs of parentheses ()
+∃x:D. ¬ 0 &lt; x ∧ ∃z:D. ¬ x + y = z ∧ x + z = y
+
+task2xinput=// Example: add 3 pairs of parentheses () to "∃y:D. x + 1 = y"
+(∃y:D. ((x + 1) = y))
+
+task3inputa=// Task 3a: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputb=// Task 3b: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputc=// Task 3c: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputx=// Example: remove from "x:D, y:D, z:D" the variable "y:D" which is not free in the formula below
+x:D, z:D
+task4ainput=// Task 4a: replace "⊤" by the formula for above statement
+⊤
+
+task4binput=// Task 4b: replace "⊤" by the formula for above statement
+⊤
+
+task4cinput=// Task 4c: replace "⊤" by the formula for above statement
+⊤
+
+task4xinput=// Example: give here the formula for above statement
+x &gt; 0 ∧ ¬∃y:D. y &gt; 0 ∧ y &lt; x
+
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpimjosxht
+Computing the value of N...
+Type checking and translation completed.
+Executing correctPar2b(ℤ) with all 3 inputs.
+Execution completed for ALL inputs (11 ms, 3 checked, 0 inadmissible).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature6">35c4baedc0dd5023b3b50c0919d117bb80cf85f5895e8b6475a9cb424a1c74efca1d95160a62f15424b48def7356acb365e56082b0dfb6028b109f926d280c57f31b3bfb5b080acb0a0c04c86353cfac362ede893cc510e90967f8e5df365e185257445c89ef49845e45f3da0ced9b509744ab961cd4d0fc0ea05aa0ad438cf48e98f300e45141bfe1e26b27c24bf9e32360c4041d5609f9f9823dc160fbfba345e8cfe91c4191d0330b265c90645fff37af606f04d9dd8254e4a4cd3dc178d72476e4ecad4beaaaea62b53b25128a871735542abda76df52da786b043f1d5e397f4164a357412ed796a7407ed410ec216c8e09c041eb5931a32997f7d179933</pre><pre id="certificate7">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSyntax4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov  6 15:05:39 2023
+Action: task2c
+Points: 1
+Inputs: 
+task1ainput=// Task 1a: add here 4 pairs of parentheses ()
+((p[x] ∧ q[x]) ⇒ ((¬ r[x]) ∨ s[x]))
+task1binput=// Task 1b: add here 5 pairs of parentheses ()
+((p[x]) ∧ (¬ ∀y:D. q[y] ⇔ ((p[y]) ∧ r[x][y])))
+
+task1cinput=// Task 1c: add here 7 pairs of parentheses ()
+((∃y:D. p[x] ⇒ ((r[x][y] ∧ ((¬ r[y][x]))) ∨ (∀z:D. p[z] ⇒ r[y][z]))))
+
+task1xinput=// Example: add 3 pairs of parentheses () to "¬ p[x] ∧ q[x] ⇒ r[x]"
+(((¬ p[x]) ∧ q[x]) ⇒ r[x]) 
+
+task2ainput=// Task 2a: add here 7 pairs of parentheses ()
+(∀y:D. ((x ⋅ y) = (1 + y)) ⇒ (¬( 0) = (y)))
+
+task2binput=// Task 2b: add here 11 pairs of parentheses ()
+(∀y:D. (((x + 1) &gt; (y)) ⇒ (¬ ∃z:D. ((z &gt; 0) ∧ (x) + ((y ⋅ z)) = 1))))
+
+task2cinput=// Task 2c: add here 11 pairs of parentheses ()
+(∃x:D. (¬ (0 &lt; x)) ∧ (∃z:D. (¬ ((x + y) = z)) ∧ ((x + z) = y)))
+
+task2xinput=// Example: add 3 pairs of parentheses () to "∃y:D. x + 1 = y"
+(∃y:D. ((x + 1) = y))
+
+task3inputa=// Task 3a: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputb=// Task 3b: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputc=// Task 3c: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputx=// Example: remove from "x:D, y:D, z:D" the variable "y:D" which is not free in the formula below
+x:D, z:D
+task4ainput=// Task 4a: replace "⊤" by the formula for above statement
+⊤
+
+task4binput=// Task 4b: replace "⊤" by the formula for above statement
+⊤
+
+task4cinput=// Task 4c: replace "⊤" by the formula for above statement
+⊤
+
+task4xinput=// Example: give here the formula for above statement
+x &gt; 0 ∧ ¬∃y:D. y &gt; 0 ∧ y &lt; x
+
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpkn_zw1qq
+Computing the value of N...
+Type checking and translation completed.
+Executing correctPar2c(ℤ) with all 3 inputs.
+Execution completed for ALL inputs (12 ms, 3 checked, 0 inadmissible).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature7">b11874b9c46a93b4ca39b1561bf06c68bb1cb4d09de644a91c4a8c922b15be8a53b63c5be86a28d68af626d0edae2c89bd7976de2a71530afbf1257f65cae138f117e6542f4aedafaccefbb08c619a217c60d3d3626a446a59360e15a821e769c4d1c28b3367f92a4beb75c0ea4714f3fc4b695815f4a0b2be53b3d67cf0d0e8fec420c7e15dffab359878e45f61612f6199610c038db3287e2dd9d3fbd171f00e3c52047f4625b812f058bbc966e076d9bf4e42be672a7b9de778fe43789912c2512c74c8bc7c9c20f5296959f1c6f5833b8f1b1b2e07ef8c27be0fcc2b49c9cd3b359073e2cbf2fbf0262d1d9b5b8021a384ff3f22ec89e41c8056ac1ebcf8</pre><pre id="certificate8">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSyntax4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov  6 15:05:44 2023
+Action: task3x
+Points: 0
+Inputs: 
+task1ainput=// Task 1a: add here 4 pairs of parentheses ()
+((p[x] ∧ q[x]) ⇒ ((¬ r[x]) ∨ s[x]))
+task1binput=// Task 1b: add here 5 pairs of parentheses ()
+((p[x]) ∧ (¬ ∀y:D. q[y] ⇔ ((p[y]) ∧ r[x][y])))
+
+task1cinput=// Task 1c: add here 7 pairs of parentheses ()
+((∃y:D. p[x] ⇒ ((r[x][y] ∧ ((¬ r[y][x]))) ∨ (∀z:D. p[z] ⇒ r[y][z]))))
+
+task1xinput=// Example: add 3 pairs of parentheses () to "¬ p[x] ∧ q[x] ⇒ r[x]"
+(((¬ p[x]) ∧ q[x]) ⇒ r[x]) 
+
+task2ainput=// Task 2a: add here 7 pairs of parentheses ()
+(∀y:D. ((x ⋅ y) = (1 + y)) ⇒ (¬( 0) = (y)))
+
+task2binput=// Task 2b: add here 11 pairs of parentheses ()
+(∀y:D. (((x + 1) &gt; (y)) ⇒ (¬ ∃z:D. ((z &gt; 0) ∧ (x) + ((y ⋅ z)) = 1))))
+
+task2cinput=// Task 2c: add here 11 pairs of parentheses ()
+(∃x:D. (¬ (0 &lt; x)) ∧ (∃z:D. (¬ ((x + y) = z)) ∧ ((x + z) = y)))
+
+task2xinput=// Example: add 3 pairs of parentheses () to "∃y:D. x + 1 = y"
+(∃y:D. ((x + 1) = y))
+
+task3inputa=// Task 3a: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputb=// Task 3b: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputc=// Task 3c: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputx=// Example: remove from "x:D, y:D, z:D" the variable "y:D" which is not free in the formula below
+x:D, z:D
+task4ainput=// Task 4a: replace "⊤" by the formula for above statement
+⊤
+
+task4binput=// Task 4b: replace "⊤" by the formula for above statement
+⊤
+
+task4cinput=// Task 4c: replace "⊤" by the formula for above statement
+⊤
+
+task4xinput=// Example: give here the formula for above statement
+x &gt; 0 ∧ ¬∃y:D. y &gt; 0 ∧ y &lt; x
+
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpkkdwddfc
+Computing the value of N...
+Type checking and translation completed.
+Executing varFormula3x(ℤ,ℤ) with all 9 inputs.
+Execution completed for ALL inputs (14 ms, 9 checked, 0 inadmissible).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature8">68aa1725b628d8c9c0613451e115a67f1d3f9772a9f52eb4daf2babecfcbe5698f7138dba2a5d98381c75c7021f372a6597ede876d1170171b2f0aff60647c921ab1c43ed5026b33d796e28deca3a892498ff16f0d03b66beb4a7440eb5eca4fd08d32f8b4112285873477a94b86aa82cdc64d3c3349d42b334abfb5b31c69db7e8d208b0d876476aad1efd876eb2b79590758c672cdc18cbd94fea7aabea5405ef80403b718771c25c9baa90aa99cc0e4bcf09dade980658c2847de55d5512f3d96173a48435d87326c2d7678a1d8809d8425cf5a403be52b9ee175ce1b3bf49b895e5454c0299cb3b8c20356c05b1e9da9a1f7880f79989f6f94bba01b419d</pre><pre id="certificate9">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSyntax4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov  6 15:06:32 2023
+Action: task3a
+Points: 1
+Inputs: 
+task1ainput=// Task 1a: add here 4 pairs of parentheses ()
+((p[x] ∧ q[x]) ⇒ ((¬ r[x]) ∨ s[x]))
+task1binput=// Task 1b: add here 5 pairs of parentheses ()
+((p[x]) ∧ (¬ ∀y:D. q[y] ⇔ ((p[y]) ∧ r[x][y])))
+
+task1cinput=// Task 1c: add here 7 pairs of parentheses ()
+((∃y:D. p[x] ⇒ ((r[x][y] ∧ ((¬ r[y][x]))) ∨ (∀z:D. p[z] ⇒ r[y][z]))))
+
+task1xinput=// Example: add 3 pairs of parentheses () to "¬ p[x] ∧ q[x] ⇒ r[x]"
+(((¬ p[x]) ∧ q[x]) ⇒ r[x]) 
+
+task2ainput=// Task 2a: add here 7 pairs of parentheses ()
+(∀y:D. ((x ⋅ y) = (1 + y)) ⇒ (¬( 0) = (y)))
+
+task2binput=// Task 2b: add here 11 pairs of parentheses ()
+(∀y:D. (((x + 1) &gt; (y)) ⇒ (¬ ∃z:D. ((z &gt; 0) ∧ (x) + ((y ⋅ z)) = 1))))
+
+task2cinput=// Task 2c: add here 11 pairs of parentheses ()
+(∃x:D. (¬ (0 &lt; x)) ∧ (∃z:D. (¬ ((x + y) = z)) ∧ ((x + z) = y)))
+
+task2xinput=// Example: add 3 pairs of parentheses () to "∃y:D. x + 1 = y"
+(∃y:D. ((x + 1) = y))
+
+task3inputa=// Task 3a: remove every variable which is not free in the formula below
+z:D, u:D, w:D
+task3inputb=// Task 3b: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputc=// Task 3c: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputx=// Example: remove from "x:D, y:D, z:D" the variable "y:D" which is not free in the formula below
+x:D, z:D
+task4ainput=// Task 4a: replace "⊤" by the formula for above statement
+⊤
+
+task4binput=// Task 4b: replace "⊤" by the formula for above statement
+⊤
+
+task4cinput=// Task 4c: replace "⊤" by the formula for above statement
+⊤
+
+task4xinput=// Example: give here the formula for above statement
+x &gt; 0 ∧ ¬∃y:D. y &gt; 0 ∧ y &lt; x
+
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpmu8fdl2p
+Computing the value of N...
+Type checking and translation completed.
+Executing varFormula3a(ℤ,ℤ,ℤ) with all 27 inputs.
+Execution completed for ALL inputs (11 ms, 27 checked, 0 inadmissible).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature9">b0c622bcf12cbb1647ddd24a0ffd8a2317d12602ca2d415b1dadb5b9bfa641130df820033a57a76abd54c35e3c3b30d6fa9b1823f9f14501a1a5805f72454062179ce91c6c02f7558d1101802eafe31359ac8e49a4c7b10768f088423859806f2a7c2fb4e39d82826ca4ae19c8bff7ce73774aaea4454585af349b65902d08c4062479b1dc254c6c3c114cebe2de29c859189296da627f8fe84650b6ffd1a16dffdcf09fd810a3bc2f81382efc4731aec6ff4aaf4581c5cb13106176a591bc58d4020a0dbac81f8c57e3c6c3a963732f1cc22116663ed004ea28bb1189337440a0e2ecf1e0d2a37d583207e00db7e861d5a537f4c99bb60d8adddd7b49535cd3</pre><pre id="certificate10">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSyntax4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov  6 15:07:00 2023
+Action: task3b
+Points: 1
+Inputs: 
+task1ainput=// Task 1a: add here 4 pairs of parentheses ()
+((p[x] ∧ q[x]) ⇒ ((¬ r[x]) ∨ s[x]))
+task1binput=// Task 1b: add here 5 pairs of parentheses ()
+((p[x]) ∧ (¬ ∀y:D. q[y] ⇔ ((p[y]) ∧ r[x][y])))
+
+task1cinput=// Task 1c: add here 7 pairs of parentheses ()
+((∃y:D. p[x] ⇒ ((r[x][y] ∧ ((¬ r[y][x]))) ∨ (∀z:D. p[z] ⇒ r[y][z]))))
+
+task1xinput=// Example: add 3 pairs of parentheses () to "¬ p[x] ∧ q[x] ⇒ r[x]"
+(((¬ p[x]) ∧ q[x]) ⇒ r[x]) 
+
+task2ainput=// Task 2a: add here 7 pairs of parentheses ()
+(∀y:D. ((x ⋅ y) = (1 + y)) ⇒ (¬( 0) = (y)))
+
+task2binput=// Task 2b: add here 11 pairs of parentheses ()
+(∀y:D. (((x + 1) &gt; (y)) ⇒ (¬ ∃z:D. ((z &gt; 0) ∧ (x) + ((y ⋅ z)) = 1))))
+
+task2cinput=// Task 2c: add here 11 pairs of parentheses ()
+(∃x:D. (¬ (0 &lt; x)) ∧ (∃z:D. (¬ ((x + y) = z)) ∧ ((x + z) = y)))
+
+task2xinput=// Example: add 3 pairs of parentheses () to "∃y:D. x + 1 = y"
+(∃y:D. ((x + 1) = y))
+
+task3inputa=// Task 3a: remove every variable which is not free in the formula below
+z:D, u:D, w:D
+task3inputb=// Task 3b: remove every variable which is not free in the formula below
+x:D, y:D, z:D, v:D, w:D
+task3inputc=// Task 3c: remove every variable which is not free in the formula below
+x:D, y:D, z:D, u:D, v:D, w:D
+task3inputx=// Example: remove from "x:D, y:D, z:D" the variable "y:D" which is not free in the formula below
+x:D, z:D
+task4ainput=// Task 4a: replace "⊤" by the formula for above statement
+⊤
+
+task4binput=// Task 4b: replace "⊤" by the formula for above statement
+⊤
+
+task4cinput=// Task 4c: replace "⊤" by the formula for above statement
+⊤
+
+task4xinput=// Example: give here the formula for above statement
+x &gt; 0 ∧ ¬∃y:D. y &gt; 0 ∧ y &lt; x
+
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpezqeubp_
+Computing the value of N...
+Type checking and translation completed.
+Executing varFormula3b(ℤ,ℤ,ℤ,ℤ,ℤ) with all 243 inputs.
+Execution completed for ALL inputs (38 ms, 243 checked, 0 inadmissible).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature10">1828bf1195ce491f1e4daeb5f0a837f04845834b885f56193e3bf9d9302544da0709bc7ca12ef6efe18c50b522e2307a642cee1bf609cd0bef809608e9f439b17acf0e9397b6dc1a935e5655486d354bc0656fa3f3d58fdb6bc71923215ae2fe1ef10e9f2aa56bc55250596e91c6bb2270322c0a126d9b66ef1dee19dec62b366252ff8b223af03baeb6384618487ed7082f3fffae5e7b850736f29d2e94d023eb7f399646c968ef3b65bd13e4a2d0907e7ab2865e07957e91020ec3325eb5dbfd0e2654c7971bcc156acfd5bb09e6030de7b7780c8c503183223c9af9cb1e327fbe4914bdc598652133203ffcb3d3848966b2a74126d0df426daf89f18ef628</pre><pre id="certificate11">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSyntax4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov  6 15:07:18 2023
+Action: task3c
+Points: 1
+Inputs: 
+task1ainput=// Task 1a: add here 4 pairs of parentheses ()
+((p[x] ∧ q[x]) ⇒ ((¬ r[x]) ∨ s[x]))
+task1binput=// Task 1b: add here 5 pairs of parentheses ()
+((p[x]) ∧ (¬ ∀y:D. q[y] ⇔ ((p[y]) ∧ r[x][y])))
+
+task1cinput=// Task 1c: add here 7 pairs of parentheses ()
+((∃y:D. p[x] ⇒ ((r[x][y] ∧ ((¬ r[y][x]))) ∨ (∀z:D. p[z] ⇒ r[y][z]))))
+
+task1xinput=// Example: add 3 pairs of parentheses () to "¬ p[x] ∧ q[x] ⇒ r[x]"
+(((¬ p[x]) ∧ q[x]) ⇒ r[x]) 
+
+task2ainput=// Task 2a: add here 7 pairs of parentheses ()
+(∀y:D. ((x ⋅ y) = (1 + y)) ⇒ (¬( 0) = (y)))
+
+task2binput=// Task 2b: add here 11 pairs of parentheses ()
+(∀y:D. (((x + 1) &gt; (y)) ⇒ (¬ ∃z:D. ((z &gt; 0) ∧ (x) + ((y ⋅ z)) = 1))))
+
+task2cinput=// Task 2c: add here 11 pairs of parentheses ()
+(∃x:D. (¬ (0 &lt; x)) ∧ (∃z:D. (¬ ((x + y) = z)) ∧ ((x + z) = y)))
+
+task2xinput=// Example: add 3 pairs of parentheses () to "∃y:D. x + 1 = y"
+(∃y:D. ((x + 1) = y))
+
+task3inputa=// Task 3a: remove every variable which is not free in the formula below
+z:D, u:D, w:D
+task3inputb=// Task 3b: remove every variable which is not free in the formula below
+x:D, y:D, z:D, v:D, w:D
+task3inputc=// Task 3c: remove every variable which is not free in the formula below
+y:D, z:D, u:D, v:D, w:D
+task3inputx=// Example: remove from "x:D, y:D, z:D" the variable "y:D" which is not free in the formula below
+x:D, z:D
+task4ainput=// Task 4a: replace "⊤" by the formula for above statement
+⊤
+
+task4binput=// Task 4b: replace "⊤" by the formula for above statement
+⊤
+
+task4cinput=// Task 4c: replace "⊤" by the formula for above statement
+⊤
+
+task4xinput=// Example: give here the formula for above statement
+x &gt; 0 ∧ ¬∃y:D. y &gt; 0 ∧ y &lt; x
+
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmp962koauj
+Computing the value of N...
+Type checking and translation completed.
+Executing varFormula3c(ℤ,ℤ,ℤ,ℤ,ℤ) with all 243 inputs.
+Execution completed for ALL inputs (37 ms, 243 checked, 0 inadmissible).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature11">282fb5681bd8380ac2bb3ca5f48c00c8a384ceebb3beae3370b88441a8d62eb5b1bdeee2a077233411b03a6fc9065406c36c0d292048c2fe970b30880ac0d071f74ebe4bcf2366134950f1f8c5380cab78d51468691ca50725afdd01576d29711e63551e4d815325ae51d96431bc3dd25fd9d7349761b61a1e16e52ea1d471bd742724473906036a6742db2ddce1df84d7173616a45d0435acb8e1c2b190547bd95cb658bdc857a9b2f3c55a9898532e17b50879a0762b6874e9a808a52bb60da7d8256897d00aba26a9cda484b2a1370ccaf29952c3f477560295682e57d9ef91e6383f7bc2d5922716c2dd1ed462373377bf749a0f0838783177aabf508633</pre><pre id="certificate12">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSyntax4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov  6 15:07:23 2023
+Action: task4x
+Points: 0
+Inputs: 
+task1ainput=// Task 1a: add here 4 pairs of parentheses ()
+((p[x] ∧ q[x]) ⇒ ((¬ r[x]) ∨ s[x]))
+task1binput=// Task 1b: add here 5 pairs of parentheses ()
+((p[x]) ∧ (¬ ∀y:D. q[y] ⇔ ((p[y]) ∧ r[x][y])))
+
+task1cinput=// Task 1c: add here 7 pairs of parentheses ()
+((∃y:D. p[x] ⇒ ((r[x][y] ∧ ((¬ r[y][x]))) ∨ (∀z:D. p[z] ⇒ r[y][z]))))
+
+task1xinput=// Example: add 3 pairs of parentheses () to "¬ p[x] ∧ q[x] ⇒ r[x]"
+(((¬ p[x]) ∧ q[x]) ⇒ r[x]) 
+
+task2ainput=// Task 2a: add here 7 pairs of parentheses ()
+(∀y:D. ((x ⋅ y) = (1 + y)) ⇒ (¬( 0) = (y)))
+
+task2binput=// Task 2b: add here 11 pairs of parentheses ()
+(∀y:D. (((x + 1) &gt; (y)) ⇒ (¬ ∃z:D. ((z &gt; 0) ∧ (x) + ((y ⋅ z)) = 1))))
+
+task2cinput=// Task 2c: add here 11 pairs of parentheses ()
+(∃x:D. (¬ (0 &lt; x)) ∧ (∃z:D. (¬ ((x + y) = z)) ∧ ((x + z) = y)))
+
+task2xinput=// Example: add 3 pairs of parentheses () to "∃y:D. x + 1 = y"
+(∃y:D. ((x + 1) = y))
+
+task3inputa=// Task 3a: remove every variable which is not free in the formula below
+z:D, u:D, w:D
+task3inputb=// Task 3b: remove every variable which is not free in the formula below
+x:D, y:D, z:D, v:D, w:D
+task3inputc=// Task 3c: remove every variable which is not free in the formula below
+y:D, z:D, u:D, v:D, w:D
+task3inputx=// Example: remove from "x:D, y:D, z:D" the variable "y:D" which is not free in the formula below
+x:D, z:D
+task4ainput=// Task 4a: replace "⊤" by the formula for above statement
+⊤
+
+task4binput=// Task 4b: replace "⊤" by the formula for above statement
+⊤
+
+task4cinput=// Task 4c: replace "⊤" by the formula for above statement
+⊤
+
+task4xinput=// Example: give here the formula for above statement
+x &gt; 0 ∧ ¬∃y:D. y &gt; 0 ∧ y &lt; x
+
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpcc_g3mq0
+Computing the value of N...
+Type checking and translation completed.
+Executing correctFormula4x(ℤ,ℤ,ℤ) with all 27 inputs.
+Execution completed for ALL inputs (7 ms, 27 checked, 0 inadmissible).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature12">84834120d325b4a51a5d375aa3b902ee7e39dc26325920bb200ff994c6c0256e395e2dbbfba069cfd591eb49e7e1c9ae14f53f516fb18b3cca988babb6c60c05c55d424668ffa264e345a64e79961181b1d8f8f30b1a24e7e4ac029af64a01900a71103e03c25dcda67efbc034aa66ab01e0e87bb93b4748bfc8b75c923221683d9eb47b9f3c95c463d885e3db6bad06066f0d906746e04d80c879ff96e75e267906ffd8d3c7055d6697ef97d14838be9824b4f336ce2713e801230b84ea3b9bc63ab6291f41a45a1f87b2a0ed7887a483a18712f1bc5c9f2e452f595fe3e8648add777b0003d190af3a04c72ae90bccd6becd26103f231f8051f279b70b2f0e</pre><pre id="certificate13">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSyntax4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov  6 15:10:38 2023
+Action: task4a
+Points: 1
+Inputs: 
+task1ainput=// Task 1a: add here 4 pairs of parentheses ()
+((p[x] ∧ q[x]) ⇒ ((¬ r[x]) ∨ s[x]))
+task1binput=// Task 1b: add here 5 pairs of parentheses ()
+((p[x]) ∧ (¬ ∀y:D. q[y] ⇔ ((p[y]) ∧ r[x][y])))
+
+task1cinput=// Task 1c: add here 7 pairs of parentheses ()
+((∃y:D. p[x] ⇒ ((r[x][y] ∧ ((¬ r[y][x]))) ∨ (∀z:D. p[z] ⇒ r[y][z]))))
+
+task1xinput=// Example: add 3 pairs of parentheses () to "¬ p[x] ∧ q[x] ⇒ r[x]"
+(((¬ p[x]) ∧ q[x]) ⇒ r[x]) 
+
+task2ainput=// Task 2a: add here 7 pairs of parentheses ()
+(∀y:D. ((x ⋅ y) = (1 + y)) ⇒ (¬( 0) = (y)))
+
+task2binput=// Task 2b: add here 11 pairs of parentheses ()
+(∀y:D. (((x + 1) &gt; (y)) ⇒ (¬ ∃z:D. ((z &gt; 0) ∧ (x) + ((y ⋅ z)) = 1))))
+
+task2cinput=// Task 2c: add here 11 pairs of parentheses ()
+(∃x:D. (¬ (0 &lt; x)) ∧ (∃z:D. (¬ ((x + y) = z)) ∧ ((x + z) = y)))
+
+task2xinput=// Example: add 3 pairs of parentheses () to "∃y:D. x + 1 = y"
+(∃y:D. ((x + 1) = y))
+
+task3inputa=// Task 3a: remove every variable which is not free in the formula below
+z:D, u:D, w:D
+task3inputb=// Task 3b: remove every variable which is not free in the formula below
+x:D, y:D, z:D, v:D, w:D
+task3inputc=// Task 3c: remove every variable which is not free in the formula below
+y:D, z:D, u:D, v:D, w:D
+task3inputx=// Example: remove from "x:D, y:D, z:D" the variable "y:D" which is not free in the formula below
+x:D, z:D
+task4ainput=// Task 4a: replace "⊤" by the formula for above statement
+
+¬(∀y:D. y ≤ x) ∧ (∃y:D. y&lt;x)
+task4binput=// Task 4b: replace "⊤" by the formula for above statement
+⊤
+
+task4cinput=// Task 4c: replace "⊤" by the formula for above statement
+⊤
+
+task4xinput=// Example: give here the formula for above statement
+x &gt; 0 ∧ ¬∃y:D. y &gt; 0 ∧ y &lt; x
+
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpc187jwlh
+Computing the value of N...
+Type checking and translation completed.
+Executing correctFormula4a(ℤ) with all 3 inputs.
+Execution completed for ALL inputs (9 ms, 3 checked, 0 inadmissible).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature13">32b2d0a8db572514a82f23c91af0e67845f9793f09fafb98cacc16730632a13cf08eb7ab99d97971feac7ae239adb18035e273b484c56a9dfb4ac6bd80920515fe4c0802ca6af09b37aca869f2abfd17122764a36e958b1d4f878af9fb09c69c67478ae38efc5b0109a80445d04953908401a933cacae9e4a484e1ad7831270b5fc16a98d76b89562720acb2f1e587deb290db548978d4d6c2aa665186d870cb1a66493289d036b875664619dafe1ac11af204d46df779a13eee792f4aad680223263eff201abdb650d3f9eb360ed71df412170915fea73adb9fa65273123eaa71985659e65a6b224738a4ec472eb20c84e5c70a9f40281e73e240c53dd22b34</pre><pre id="certificate14">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSyntax4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov  6 15:11:37 2023
+Action: task4b
+Points: 1
+Inputs: 
+task1ainput=// Task 1a: add here 4 pairs of parentheses ()
+((p[x] ∧ q[x]) ⇒ ((¬ r[x]) ∨ s[x]))
+task1binput=// Task 1b: add here 5 pairs of parentheses ()
+((p[x]) ∧ (¬ ∀y:D. q[y] ⇔ ((p[y]) ∧ r[x][y])))
+
+task1cinput=// Task 1c: add here 7 pairs of parentheses ()
+((∃y:D. p[x] ⇒ ((r[x][y] ∧ ((¬ r[y][x]))) ∨ (∀z:D. p[z] ⇒ r[y][z]))))
+
+task1xinput=// Example: add 3 pairs of parentheses () to "¬ p[x] ∧ q[x] ⇒ r[x]"
+(((¬ p[x]) ∧ q[x]) ⇒ r[x]) 
+
+task2ainput=// Task 2a: add here 7 pairs of parentheses ()
+(∀y:D. ((x ⋅ y) = (1 + y)) ⇒ (¬( 0) = (y)))
+
+task2binput=// Task 2b: add here 11 pairs of parentheses ()
+(∀y:D. (((x + 1) &gt; (y)) ⇒ (¬ ∃z:D. ((z &gt; 0) ∧ (x) + ((y ⋅ z)) = 1))))
+
+task2cinput=// Task 2c: add here 11 pairs of parentheses ()
+(∃x:D. (¬ (0 &lt; x)) ∧ (∃z:D. (¬ ((x + y) = z)) ∧ ((x + z) = y)))
+
+task2xinput=// Example: add 3 pairs of parentheses () to "∃y:D. x + 1 = y"
+(∃y:D. ((x + 1) = y))
+
+task3inputa=// Task 3a: remove every variable which is not free in the formula below
+z:D, u:D, w:D
+task3inputb=// Task 3b: remove every variable which is not free in the formula below
+x:D, y:D, z:D, v:D, w:D
+task3inputc=// Task 3c: remove every variable which is not free in the formula below
+y:D, z:D, u:D, v:D, w:D
+task3inputx=// Example: remove from "x:D, y:D, z:D" the variable "y:D" which is not free in the formula below
+x:D, z:D
+task4ainput=// Task 4a: replace "⊤" by the formula for above statement
+
+¬(∀y:D. y ≤ x) ∧ (∃y:D. y&lt;x)
+task4binput=// Task 4b: replace "⊤" by the formula for above statement
+∀y:D. y &gt; x ⇒ ∃z:D. z &gt; 0 ∧ x+z=y
+
+task4cinput=// Task 4c: replace "⊤" by the formula for above statement
+⊤
+
+task4xinput=// Example: give here the formula for above statement
+x &gt; 0 ∧ ¬∃y:D. y &gt; 0 ∧ y &lt; x
+
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmp_p3806di
+Computing the value of N...
+Type checking and translation completed.
+Executing correctFormula4b(ℤ) with all 3 inputs.
+Execution completed for ALL inputs (6 ms, 3 checked, 0 inadmissible).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature14">9adccf5511183e734d16bc1282bb6babb97372f4b07b06094d8e6fce2697742c95d4beea7a1372b48466d9ea0bd0993e6a667125997ca3aad0e5a1757a8f216c9c3a102b3a77e0df66973735b31eac4b0b5dd4ba9dea366df236208825da287eecd93de95d587d1989d7c3bd9841274a81eeb67fb3d5dd471baa26486cd132be8e6c78fd03ccfb06f4d9513da39ae50e4f93e75d574ec675a3c1b1549bd38f72baee85355da65bde55ed075f06be0faa4d5fdcc61b708292afec80dd3990fec315f87cda2ccef3232a632fe64a7c6443df78d11af63fa2f7cb486990a224e27d940a4e99ce2e4f17396a2b1ee2d277d42bef35413d17bb8d8277b3204ad95ea0</pre><pre id="certificate15">&lt;&lt;&lt;SUCCESS CERTIFICATE&gt;&gt;&gt;
+Webex: firstOrderSyntax4
+Submitter: Mohammad Shadik Ansari
+Time: Mon Nov  6 15:13:48 2023
+Action: task4c
+Points: 1
+Inputs: 
+task1ainput=// Task 1a: add here 4 pairs of parentheses ()
+((p[x] ∧ q[x]) ⇒ ((¬ r[x]) ∨ s[x]))
+task1binput=// Task 1b: add here 5 pairs of parentheses ()
+((p[x]) ∧ (¬ ∀y:D. q[y] ⇔ ((p[y]) ∧ r[x][y])))
+
+task1cinput=// Task 1c: add here 7 pairs of parentheses ()
+((∃y:D. p[x] ⇒ ((r[x][y] ∧ ((¬ r[y][x]))) ∨ (∀z:D. p[z] ⇒ r[y][z]))))
+
+task1xinput=// Example: add 3 pairs of parentheses () to "¬ p[x] ∧ q[x] ⇒ r[x]"
+(((¬ p[x]) ∧ q[x]) ⇒ r[x]) 
+
+task2ainput=// Task 2a: add here 7 pairs of parentheses ()
+(∀y:D. ((x ⋅ y) = (1 + y)) ⇒ (¬( 0) = (y)))
+
+task2binput=// Task 2b: add here 11 pairs of parentheses ()
+(∀y:D. (((x + 1) &gt; (y)) ⇒ (¬ ∃z:D. ((z &gt; 0) ∧ (x) + ((y ⋅ z)) = 1))))
+
+task2cinput=// Task 2c: add here 11 pairs of parentheses ()
+(∃x:D. (¬ (0 &lt; x)) ∧ (∃z:D. (¬ ((x + y) = z)) ∧ ((x + z) = y)))
+
+task2xinput=// Example: add 3 pairs of parentheses () to "∃y:D. x + 1 = y"
+(∃y:D. ((x + 1) = y))
+
+task3inputa=// Task 3a: remove every variable which is not free in the formula below
+z:D, u:D, w:D
+task3inputb=// Task 3b: remove every variable which is not free in the formula below
+x:D, y:D, z:D, v:D, w:D
+task3inputc=// Task 3c: remove every variable which is not free in the formula below
+y:D, z:D, u:D, v:D, w:D
+task3inputx=// Example: remove from "x:D, y:D, z:D" the variable "y:D" which is not free in the formula below
+x:D, z:D
+task4ainput=// Task 4a: replace "⊤" by the formula for above statement
+
+¬(∀y:D. y ≤ x) ∧ (∃y:D. y&lt;x)
+task4binput=// Task 4b: replace "⊤" by the formula for above statement
+∀y:D. y &gt; x ⇒ ∃z:D. z &gt; 0 ∧ x+z=y
+
+task4cinput=// Task 4c: replace "⊤" by the formula for above statement
+∃y:D. ∀x:D. (x=x*y) ∧ ¬∀x:D. (y+z)&gt;(x+z)
+task4xinput=// Example: give here the formula for above statement
+x &gt; 0 ∧ ¬∃y:D. y &gt; 0 ∧ y &lt; x
+
+Log:
+RISC Algorithm Language 4.1 (July 11, 2022)
+https://www.risc.jku.at/research/formal/software/RISCAL
+(C) 2016-, Research Institute for Symbolic Computation (RISC)
+This is free software distributed under the terms of the GNU GPL.
+Execute "RISCAL -h" to see the available command line options.
+-----------------------------------------------------------------
+Reading file /tmp/tmpna0s6cx0
+Computing the value of N...
+Type checking and translation completed.
+Executing correctFormula4c(ℤ,ℤ) with all 9 inputs.
+Execution completed for ALL inputs (27 ms, 9 checked, 0 inadmissible).
+SUCCESS termination.
+&lt;&lt;&lt;END CERTIFICATE&gt;&gt;&gt;</pre><pre id="signature15">b6fd60b67f082ecd1287b3590b50ea635cb2ec89bf18e50d976c3fbb2f48cb70ef7000e10f4410be926ccc5baf811b3dce70652db24390851a4044bb0e205d02ac99133a839918a9a48aeb84275b1ef8d5e88a8c48149374a5678bbfa9a6cf2a00d56d6b8177172444988282857426e18806071e96ab9ccf3105683c4d8cfc4aaafb7a7504206564b6ce564706c28a34020b8a95496375fe6a6ef86e348718ce5e812fd8bd93629f6f7fb3ffa73e4585c5ede21925cfeda0c7c799688c2879dd24f8ca165431edd769fff19561495aa58d78dbb4b7bc7ec324899bf7d1761ebb09d10f98e67e914584a668bbaca4bfe270424efd7cbbf76bab2111e2868e5c17</pre></body>
+</html>

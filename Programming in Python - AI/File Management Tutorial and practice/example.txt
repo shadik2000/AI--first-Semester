@@ -1,0 +1,6 @@
+File management in Python involves 
+various operations related to handling files, 
+such as reading from and writing to files, 
+creating and deleting files, and navigating 
+directories. Here are some examples and explanations 
+for different aspects of file management in Python:
